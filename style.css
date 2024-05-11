@@ -1,0 +1,20 @@
+/* //  * Universal Selector  */
+/*  //  # Id Selector  */
+/*  //  . Class Selector  */
+
+
+/* //  Text Styling in Css  */
+.check{
+    color: blue;
+    background-color: yellow;
+    /* opacity: 0.5; */
+    font-family: serif;
+    font-size: 28px;
+    font-weight:bold ;
+    font-style: italic;
+    text-transform: lowercase;
+    text-decoration: underline  ;
+    line-height: 1.4em;
+    letter-spacing: 0.1em;
+}
+
