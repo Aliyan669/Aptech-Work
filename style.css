@@ -2,6 +2,10 @@
 /*  //  # Id Selector  */
 /*  //  . Class Selector  */
 
+/* *{
+    margin: 0;
+    padding: 0;
+} */
 
 /* //  Text Styling in Css  */
 .check {
@@ -22,6 +26,7 @@
     text-shadow: 2px 2px 7px #111111;
 }
 
+/* //  Box Styling in Css  */
 .box {
     width: 200px;
     height: 200px;
@@ -33,7 +38,7 @@
 
     /* Padding: Top  Right   Bottom   Left */
     padding: 10px;
-
+    
     /* display: inline; */
     visibility: visible;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -41,12 +46,51 @@
     cursor: pointer;
 }
 
+/* //  List Styling in Css  */
 ol {
     list-style-type: lower-roman;
     /* list-style-image: url("image.jpg"); */
     /* list-style-position: inside; */
     list-style: none;
+    /* position: fixed; */
+    /* top: 0px;
+    z-index: 10; */
+    /* float: right; */
 }
+
+/* //  Background Image in Css  */
+.bgimage {
+    background-image: url("image.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+/* //  FlexBox in Css  */
+.parent {
+    width: 100%;
+    height: 70vh;
+    margin-top: 20px;
+    background-color: blue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.child1 {
+    width: 45%;
+    height: 60vh;
+    background-color: yellow;
+}
+
+.child2 {
+    width: 45%;
+    height: 60vh;
+    background-color: purple;
+}
+
 
 .check:hover {
     text-align: center;
