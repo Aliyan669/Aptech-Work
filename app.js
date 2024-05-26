@@ -6,8 +6,8 @@
 
 //////   Variables in Js   //////
 
-var name = "Aliyan"   // Variable for String
-var num = 65   // Variable for Number
+// var name = "Aliyan"   // Variable for String
+// var num = 65   // Variable for Number
 // console.log(name)
 
 
@@ -20,35 +20,36 @@ var num = 65   // Variable for Number
 
 /////    Arithmetic Operators in Js    //////
    
-var number = 22 + 30    /// Addition
-console.log("Addition  >>>",number)
+// var number = 22 + 30    /// Addition
 
-var number = 50 - 30    /// Subtract 
-console.log("Subtract  >>>",number)
+// console.log("Addition  >>>",number)
 
-var number = 2 * 20     /// Multiply
-console.log("Multiply  >>>",number)
+// var number = 50 - 30    /// Subtract 
+// console.log("Subtract  >>>",number)
 
-var number = 2 / 20     /// Division
-console.log("Division  >>>",number)
+// var number = 2 * 20     /// Multiply
+// console.log("Multiply  >>>",number)
 
-var number = 2 % 20     /// Modulus
-console.log("Modulus  >>>",number)
+// var number = 2 / 20     /// Division
+// console.log("Division  >>>",number)
 
-var numm = 2
-numm++    /// Increament
-console.log("Increament  >>>",numm)
+// var number = 2 % 20     /// Modulus
+// console.log("Modulus  >>>",number)
 
-var nummm = 5
-nummm--   /// Decrement
-console.log("Decrement  >>>",nummm)
+// var numm = 2
+// numm++    /// Increament
+// console.log("Increament  >>>",numm)
+
+// var nummm = 5
+// nummm--   /// Decrement
+// console.log("Decrement  >>>",nummm)
 
 
 /////    Concatenating on Text String   //////
 
-var firstName = "Aliyan ";
-var lastName = "Amir" ;
-console.log(firstName + lastName)
+// var firstName = "Aliyan ";
+// var lastName = "Amir" ;
+// console.log(firstName + lastName)
 
 
 /////   if else Statement in Js   //////
@@ -209,3 +210,36 @@ console.log(firstName + lastName)
 // for (i = 0; i < data.length; i++) {
 //    document.write(" Student Name is ", data[i].name, " Age is ", data[i].age, " Roll Number is ", data[i].rollNumber, " Favourite Subject is ", data[i].favSubject, "<br />")
 // }
+
+
+//////    Class Template Object in Js   ///////
+
+// class student{
+//         name= "";
+//         age= "";
+//         rollNumber= "" ;
+//         favSubject= "";
+
+//         stu(){
+//             document.write(" Student Name is ", this.name, " Age is ", this.age, " Roll Number is ", this.rollNumber, " Favourite Subject is ",this.favSubject, "<br />")
+//         }
+//     }
+
+// stud1 = new student;
+
+// stud1.name= "Aliyan";
+// stud1.age= "18";
+// stud1.rollNumber= "12" ;
+// stud1.favSubject= "Math";
+// stud1.stu()
+
+// stud2 = new student;
+
+// stud2.name= "Fahad";
+// stud2.age= "16";
+// stud2.rollNumber= "10" ;
+// stud2.favSubject= "Urdu";
+// stud2.stu()
+
+
+
