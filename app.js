@@ -126,6 +126,9 @@
 
 // console.log(fruits.length)  /// Check the Length of Array
 
+
+//////     Array Method in Js   ///////
+
 // fruits.pop() /// Remove last value of Array
 // document.write(fruits)
 
@@ -242,4 +245,82 @@
 // stud2.stu()
 
 
+//////    String & Change Case Method in Js   ///////
+
+// var text = "Aliyan Amir"
+// console.log("Lowercase ----",text.toLowerCase())
+// console.log("UpperCase ----",text.toUpperCase())
+// console.log("Measuring Length ----",text.slice(0, 6))  // First Arguement index Number , Second Length
+// console.log("Finding Measuring Index Number ----",text.indexOf("Amir"))
+// console.log("Finding Character at a Location ----",text.charAt(1))
+// console.log("Replace Word ----",text.replace("Amir","Hello"))
+
+
+//////    Math Method in Js   ///////
+ 
+// var num =  2.60;
+// console.log("Original Number---",num,"Round of Number ----",Math.round(num))
+// console.log("Original Number---",num,"Ceil Method Number ----",Math.ceil(num))
+// console.log("Original Number---",num,"Floor Method Number ----",Math.floor(num))
+
+
+//////    Converting Strings to Integers and Decimals in Js   ///////  parseint()
+
+// var val = parseInt(prompt("Enter a Number"))
+// var cal = val*2
+// console.log(cal)
+
+
+//////    Converting Strings to Numbers in Js   /////// 
+
+// var num = "34"                // String 
+// // console.log(typeof(num))   
+// var convert = Number(num);    // Convert String to Number 
+// console.log(typeof(convert))  // Number 
+
+
+//////    Converting Numbers to Strings in Js   /////// 
+
+// var num = 34                   // Number 
+// console.log(typeof(num))   
+// var convert = toString(num);   // Convert Number to String 
+// console.log(typeof(convert))  // String 
+
+
+//////   Date Method in Js   /////// 
+
+// var rightNow = new Date();
+// console.log(rightNow)
+
+// var dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+// var now = new Date();
+// var theDay = now.getDay();
+// var nameOfToday = dayNames[theDay];
+// console.log(nameOfToday)
+
+ var rightNow = new Date();
+// console.log("Get Current Month ",rightNow.getMonth())
+// console.log("Get Current Date ",rightNow.getDate())
+// console.log("Get Current Year ",rightNow.getFullYear())
+// console.log("Get Current Hours ",rightNow.getHours())
+// console.log("Get Current Minutes ",rightNow.getMinutes())
+// console.log("Get Current Second ",rightNow.getSeconds())
+// console.log("Get Current Time ",rightNow.getTime())
+
+
+//////   Function in Js   /////// 
+
+// function Greet(){      //  function Assign
+//     alert("Hello world!")
+// }
+// Greet()   //  Call this function 
+
+
+//////  Passing Data on Function in Js   /////// 
+
+// function what(params) {
+//     alert(params)
+// }
+
+// what("Hello world!")
 
