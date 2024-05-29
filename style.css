@@ -1,17 +1,19 @@
-/* //  * Universal Selector  */
-/*  //  # Id Selector  */
-/*  //  . Class Selector  */
+/* //  (*) Universal Selector  */
+/*  //  (#) Id Selector  */
+/*  //  (.) Class Selector  */
 
 /* *{
     margin: 0;
     padding: 0;
 } */
 
+
 /* //  Text Styling in Css  */
-.check {
+
+/* .check {
     color: blue;
     background-color: yellow;
-    /* opacity: 0.5; */
+    opacity: 0.5;
     font-family: serif;
     font-size: 28px;
     font-weight: bold;
@@ -20,56 +22,64 @@
     text-decoration: underline;
     line-height: 1.4em;
     letter-spacing: 0.1em;
-    /* word-spacing: 1em; */
+    word-spacing: 1em;
     text-align: left;
     text-indent: 20px;
     text-shadow: 2px 2px 7px #111111;
-}
+} */
+
 
 /* //  Box Styling in Css  */
-.box {
+
+/* .box {
     width: 200px;
     height: 200px;
     background-color: blue;
     border: 2px solid red;
 
-    /* margin: Top  Right   Bottom   Left */
-    /* margin:50px 40px 10px 60px ; */
+    margin: Top  Right   Bottom   Left
+    margin:50px 40px 10px 60px ;
 
-    /* Padding: Top  Right   Bottom   Left */
+    Padding: Top  Right   Bottom   Left
     padding: 10px;
     
-    /* display: inline; */
+    display: inline;
     visibility: visible;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 20px;
     cursor: pointer;
-}
+} */
+
 
 /* //  List Styling in Css  */
-ol {
+
+/* ol {
     list-style-type: lower-roman;
-    /* list-style-image: url("image.jpg"); */
-    /* list-style-position: inside; */
+    list-style-image: url("image.jpg"); 
+    list-style-position: inside;
     list-style: none;
-    /* position: fixed; */
-    /* top: 0px;
-    z-index: 10; */
-    /* float: right; */
-}
+    position: fixed;
+    top: 0px;
+    z-index: 10;
+    float: right;
+} */
+
 
 /* //  Background Image in Css  */
-.bgimage {
+
+/* .bgimage {
     background-image: url("image.jpg");
     width: 100%;
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
-}
+} */
+
 
 /* //  FlexBox in Css  */
-.parent {
+
+/* .parent {
     width: 100%;
     height: 70vh;
     margin-top: 20px;
@@ -89,9 +99,28 @@ ol {
     width: 45%;
     height: 60vh;
     background-color: purple;
-}
+} */
 
 
-.check:hover {
+/* .check:hover {
     text-align: center;
-}
+} */
+
+/* .fa-brands{
+    font-size: 40px;
+} */
+
+/* #animation{
+    width: 500px;
+    height: 500px;
+    background-color: blue;
+} */
+
+
+/* //  Media Query REsponsive Website ke liya  */
+
+/* @media (max-width:400px){
+    h1{
+        color: red;
+    }
+} */

@@ -1,5 +1,5 @@
-// alert("Welcome")  // Dialog Box 
-// confirm("Hello World!")   // Confirm Dialog Box 
+// alert("Welcome")  // Dialog Box
+// confirm("Hello World!")   // Confirm Dialog Box
 // prompt("Enter a Name","Aliyan")   // User Prompt Dialog Box
 // console.log("Hello World")   // Print on Console
 // document.write("Hello World!")   // Print on Screen
@@ -19,12 +19,12 @@
 
 
 /////    Arithmetic Operators in Js    //////
-   
+
 // var number = 22 + 30    /// Addition
 
 // console.log("Addition  >>>",number)
 
-// var number = 50 - 30    /// Subtract 
+// var number = 50 - 30    /// Subtract
 // console.log("Subtract  >>>",number)
 
 // var number = 2 * 20     /// Multiply
@@ -103,7 +103,7 @@
 /////     ||    //////
 // var name = "Aliyan";
 // var age = 18;
-// if (name == "Aliyan" || age == 16) {  // Dono me se ek sahi hoga ya dono sahi hoga tu success show hoga  
+// if (name == "Aliyan" || age == 16) {  // Dono me se ek sahi hoga ya dono sahi hoga tu success show hoga
 //    alert("Success")
 // }else{
 //    alert("Fail")
@@ -112,7 +112,7 @@
 // /////     &&    //////
 // var name = "Aliyan";
 // var age = 18;
-// if (name == "Aliyan" && age == 18) {  // Dono  sahi hoga  tu success show hoga  
+// if (name == "Aliyan" && age == 18) {  // Dono  sahi hoga  tu success show hoga
 //    alert("Success")
 // }else{
 //    alert("Fail")
@@ -149,8 +149,18 @@
 // var allFruit = fruit1.concat(fruit2)   /// Concatination on Array
 // document.write(allFruit)
 
-// var text = fruits.join(" and ");  /// Join Method Replace (,) to given value 
+// var text = fruits.join(" and ");  /// Join Method Replace (,) to given value
 // document.write(text)
+
+
+//////    While Loop in Js   ///////
+
+// var num = 2 ;
+// var i =1
+// while (i<= 10){
+//    console.log(num ," x ", i ," = ", num*i , "<br />")
+//    i++
+// }
 
 
 //////    For Loop in Js   ///////
@@ -159,8 +169,8 @@
 // for (let i = 0; i <= 5; i++) {
 //     document.write(text , "<br />")
 // }
- 
- 
+
+
 //////  Table on For Loop    ///////
 
 // var num = 2 ;
@@ -257,7 +267,7 @@
 
 
 //////    Math Method in Js   ///////
- 
+
 // var num =  2.60;
 // console.log("Original Number---",num,"Round of Number ----",Math.round(num))
 // console.log("Original Number---",num,"Ceil Method Number ----",Math.ceil(num))
@@ -271,23 +281,23 @@
 // console.log(cal)
 
 
-//////    Converting Strings to Numbers in Js   /////// 
+//////    Converting Strings to Numbers in Js   ///////
 
-// var num = "34"                // String 
-// // console.log(typeof(num))   
-// var convert = Number(num);    // Convert String to Number 
-// console.log(typeof(convert))  // Number 
-
-
-//////    Converting Numbers to Strings in Js   /////// 
-
-// var num = 34                   // Number 
-// console.log(typeof(num))   
-// var convert = toString(num);   // Convert Number to String 
-// console.log(typeof(convert))  // String 
+// var num = "34"                // String
+// // console.log(typeof(num))
+// var convert = Number(num);    // Convert String to Number
+// console.log(typeof(convert))  // Number
 
 
-//////   Date Method in Js   /////// 
+//////    Converting Numbers to Strings in Js   ///////
+
+// var num = 34                   // Number
+// console.log(typeof(num))
+// var convert = toString(num);   // Convert Number to String
+// console.log(typeof(convert))  // String
+
+
+//////   Date Method in Js   ///////
 
 // var rightNow = new Date();
 // console.log(rightNow)
@@ -298,7 +308,7 @@
 // var nameOfToday = dayNames[theDay];
 // console.log(nameOfToday)
 
- var rightNow = new Date();
+// var rightNow = new Date();
 // console.log("Get Current Month ",rightNow.getMonth())
 // console.log("Get Current Date ",rightNow.getDate())
 // console.log("Get Current Year ",rightNow.getFullYear())
@@ -308,15 +318,15 @@
 // console.log("Get Current Time ",rightNow.getTime())
 
 
-//////   Function in Js   /////// 
+//////   Function in Js   ///////
 
 // function Greet(){      //  function Assign
 //     alert("Hello world!")
 // }
-// Greet()   //  Call this function 
+// Greet()   //  Call this function
 
 
-//////  Passing Data on Function in Js   /////// 
+//////  Passing Data on Function in Js   ///////
 
 // function what(params) {
 //     alert(params)
@@ -324,3 +334,54 @@
 
 // what("Hello world!")
 
+
+//////  Swich Statemnet in Js   ///////
+
+// var dayOfWk = "Sat"
+// switch (dayOfWk) {
+//     case "Sat":
+//         alert("Enjoy Saturday");
+//         break;
+//     case "Sun":
+//         alert("Enjoy Sunday");
+//         break;
+//     case "Fri":
+//         alert("Enjoy Friday");
+//         break;
+//     default:
+//         alert("Shoot me now!");
+// }
+
+
+//////  Events in Js   ///////
+
+// onClick()   // Assign in Html
+// onMouseover()   // Assign in Html
+// onMouseleave()   // Assign in Html
+
+
+//////  Read Input Value in Js   ///////
+
+// .value  Read & Get Value
+// .innerHTML  Read & Get Value
+
+
+////// DOM (Document Object Model) in Js   ///////
+
+// document.getElementById("Dumy")
+// document.getElementsByClassName("Dumy")
+// document.getElementsByTagName("p")
+
+// .childNodes[0]
+// .parentNode
+// .firstChild
+// .lastChild
+// .nextSibling
+// .previousSibling
+// .nodeType
+// .nodeName
+// .nodeValue
+// .createElement("p")
+// .setAttribute("class" , "hello")
+// .createTextNode("hello")
+// .appendChild()
