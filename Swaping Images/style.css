@@ -1,0 +1,69 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.image {
+    width: 500px;
+    height: 300px;
+    cursor: pointer;
+}
+
+.show {
+    width: 90px;
+    height: 30px;
+    border: none;
+    background-color: rgb(12, 122, 1);
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+}
+
+.hide {
+    width: 90px;
+    height: 30px;
+    border: none;
+    background-color: rgb(236, 14, 14);
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+}
+
+.red {
+    width: 90px;
+    height: 30px;
+    border: none;
+    background-color: red;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+}
+
+.blue {
+    width: 90px;
+    height: 30px;
+    border: none;
+    background-color: blue;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+}
+
+.green {
+    width: 90px;
+    height: 30px;
+    border: none;
+    background-color: green;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+}
+
+.yellow {
+    width: 90px;
+    height: 30px;
+    border: none;
+    background-color: rgb(237, 237, 5);
+    border-radius: 3px;
+    color: black;
+    cursor: pointer;
+}

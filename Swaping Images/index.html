@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swaping Images</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Change Images on Mouse Hover</h1>
+    <img onmouseover="Mousein()" id="img" onmouseleave="Mouseout()" src="img1.jpeg" class="image">
+
+
+    <h1>Image Hide & Show on Button Click</h1>
+    <img src="img1.jpeg" class="image" id="imgs"><br />
+
+    <Button onclick="Hide()" class="hide">Hide</Button>
+    <Button onclick="Show()" class="show">Show</Button>
+
+
+    <h1 id="color">Change Text Color On Button</h1>
+    <Button onclick="Red()" class="red">Red</Button>
+    <Button onclick="Blue()" class="blue">Blue</Button>
+    <Button onclick="Green()" class="green">Yellow</Button>
+    <Button onclick="Yellow()" class="yellow">Yellow</Button>
+
+</body>
+<script src="app.js"></script>
+</html>
