@@ -44,6 +44,12 @@ function Mouse5out() {
 /// New Arrivals
 
 var product_6 = document.getElementById('product-6');
+var product_7 = document.getElementById('product-7');
+var product_8 = document.getElementById('product-8');
+var product_9 = document.getElementById('product-9');
+var product_10 = document.getElementById('product-10');
+var product_11 = document.getElementById('product-11');
+
 
 function Mouse6in() {
     product_6.src = "Images/product 4 ( img 2).jpg"
@@ -52,8 +58,40 @@ function Mouse6out() {
     product_6.src = "Images/product 4 ( img 1).jpg"
 }
 
+function Mouse7in() {
+    product_7.src = "Images/product 9 (img 2).png"
+}
+function Mouse7out() {
+    product_7.src = "Images/product 9 (img 1).png"
+}
 
+function Mouse8in() {
+    product_8.src = "Images/product 6 (img 2).jpg"
+}
+function Mouse8out() {
+    product_8.src = "Images/product 6 (img 1).jpg"
+}
 
+function Mouse9in() {
+    product_9.src = "Images/product 5 (img 2).jpg"
+}
+function Mouse9out() {
+    product_9.src = "Images/product 5 (img 1).jpg"
+}
+
+function Mouse10in() {
+    product_10.src = "Images/product 10 (img 2).png"
+}
+function Mouse10out() {
+    product_10.src = "Images/product 10 (img 1).png"
+}
+
+function Mouse11in() {
+    product_11.src = "Images/product 3 (img 2).jpg"
+}
+function Mouse11out() {
+    product_11.src = "Images/product 3 ( img 1).jpg"
+}
 
 
 

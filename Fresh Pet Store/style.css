@@ -110,7 +110,7 @@ ul li {
 
 .introduce {
     text-align: center;
-    margin: 50px 0 40px 0px;
+    margin: 40px 0 40px 0px;
     font-size: 36px;
     color: #634436;
     font-family: "Happy Monkey", system-ui;
@@ -242,12 +242,11 @@ ul li {
 
 }
 
-
-form {
-    /* padding: 30px 30px; */
-    /* border: 1px solid blue; */
-    /* width: 100%; */
-}
+/* form {
+    padding: 30px 30px;
+    border: 1px solid blue;
+    width: 100%;
+} */
 
 
 .inp {
@@ -422,12 +421,18 @@ textarea {
     color: #edbc84;
     cursor: pointer;
 }
-hr{
+
+hr {
     color: #edbc84 !important;
 }
 
+.col-lg-3 {
+    margin: 5px 0px !important;
+}
 
-
+.second_row {
+    margin-top: 15px !important;
+}
 
 
 
