@@ -1,103 +1,80 @@
-var product_1 = document.getElementById('product-1');
-var product_2 = document.getElementById('product-2');
-var product_3 = document.getElementById('product-3');
-var product_4 = document.getElementById('product-4');
-var product_5 = document.getElementById('product-5');
+var Litre_Plastic_Bottle = document.getElementById('Litre-Plastic-Bottle');
+var Oval_Glass_Jar = document.getElementById('Oval-Glass-Jar');
+var Special_Plastic_Jar = document.getElementById('Special-Plastic-Jar');
+var Litre_Glass_Bottle = document.getElementById('Litre-Glass-Bottle');
 
 /// Best Seller 
 
-function Mouse1in() {
-    product_1.src = "Images/product 1 (img 1).jpg"
+function LitrePlasticBottleIn() {
+    Litre_Plastic_Bottle.src = "Images/Litre Plastic Bottle_2.jpg"
 }
-function Mouse1out() {
-    product_1.src = "Images/product 1 (img 2).jpg"
-}
-
-function Mouse2in() {
-    product_2.src = "Images/product 7 (img 2).jpg"
-}
-function Mouse2out() {
-    product_2.src = "Images/product 7 (img 1).jpg"
+function LitrePlasticBottleOut() {
+    Litre_Plastic_Bottle.src = "Images/Litre Plastic Bottle_1.jpg"
 }
 
-function Mouse3in() {
-    product_3.src = "Images/product 8 (img 2).jpg"
+function OvalGlassJarIn() {
+    Oval_Glass_Jar.src = "Images/Oval Glass Jar_2.jpg"
 }
-function Mouse3out() {
-    product_3.src = "Images/product 8 (img 1).jpg"
-}
-
-function Mouse4in() {
-    product_4.src = "Images/product 4 ( img 2).jpg"
-}
-function Mouse4out() {
-    product_4.src = "Images/product 4 ( img 1).jpg"
+function OvalGlassJarOut() {
+    Oval_Glass_Jar.src = "Images/Oval Glass Jar_1.jpg"
 }
 
-function Mouse5in() {
-    product_5.src = "Images/product 3 (img 2).jpg"
+function SpecialPlasticJarIn() {
+    Special_Plastic_Jar.src = "Images/Special Plastic Jar_2.jpg"
 }
-function Mouse5out() {
-    product_5.src = "Images/product 3 ( img 1).jpg"
+function SpecialPlasticJarOut() {
+    Special_Plastic_Jar.src = "Images/Special Plastic Jar_1.jpg"
+}
+
+function LitreGlassBottleIn() {
+    Litre_Glass_Bottle.src = "Images/Litre Glass Bottle_2.jpg"
+}
+function LitreGlassBottleOut() {
+    Litre_Glass_Bottle.src = "Images/Litre Glass Bottle_1.jpg"
 }
 
 /// New Arrivals
 
-var product_6 = document.getElementById('product-6');
-var product_7 = document.getElementById('product-7');
-var product_8 = document.getElementById('product-8');
-var product_9 = document.getElementById('product-9');
-var product_10 = document.getElementById('product-10');
-var product_11 = document.getElementById('product-11');
+var Trans_Glass_Bottle = document.getElementById('Trans-Glass-Bottle');
+var Hexagon_Glass_Jar = document.getElementById('Hexagon-Glass-Jar');
+var Brown_Wood_Baskets = document.getElementById('Brown-Wood-Baskets');
+var Grey_Wood_Basket = document.getElementById('Grey-Wood-Basket');
+var Round_Plastic_Jar = document.getElementById('Round-Plastic-Jar');
 
-
-function Mouse6in() {
-    product_6.src = "Images/product 4 ( img 2).jpg"
+function TransGlassBottleIn() {
+    Trans_Glass_Bottle.src = "Images/Transparent Glass Bottle_2.jpg"
 }
-function Mouse6out() {
-    product_6.src = "Images/product 4 ( img 1).jpg"
+function TransGlassBottleOut() {
+    Trans_Glass_Bottle.src = "Images/Transparent Glass Bottle_1.jpg"
 }
 
-function Mouse7in() {
-    product_7.src = "Images/product 9 (img 2).png"
+function HexagonGlassJarIn() {
+    Hexagon_Glass_Jar.src = "Images/Hexagon Glass Jar_2.jpg"
 }
-function Mouse7out() {
-    product_7.src = "Images/product 9 (img 1).png"
-}
-
-function Mouse8in() {
-    product_8.src = "Images/product 6 (img 2).jpg"
-}
-function Mouse8out() {
-    product_8.src = "Images/product 6 (img 1).jpg"
+function HexagonGlassJarOut() {
+    Hexagon_Glass_Jar.src = "Images/Hexagon Glass Jar_1.jpg"
 }
 
-function Mouse9in() {
-    product_9.src = "Images/product 5 (img 2).jpg"
+function BrownWoodBasketsIn() {
+    Brown_Wood_Baskets.src = "Images/Brown Wood Baskets_2.png"
 }
-function Mouse9out() {
-    product_9.src = "Images/product 5 (img 1).jpg"
-}
-
-function Mouse10in() {
-    product_10.src = "Images/product 10 (img 2).png"
-}
-function Mouse10out() {
-    product_10.src = "Images/product 10 (img 1).png"
+function BrownWoodBasketsOut() {
+    Brown_Wood_Baskets.src = "Images/Brown Wood Baskets_1.png"
 }
 
-function Mouse11in() {
-    product_11.src = "Images/product 3 (img 2).jpg"
+function GreyWoodBasketIn() {
+    Grey_Wood_Basket.src = "Images/Grey Wood Baskets_2.png"
 }
-function Mouse11out() {
-    product_11.src = "Images/product 3 ( img 1).jpg"
+function GreyWoodBasketOut() {
+    Grey_Wood_Basket.src = "Images/Grey Wood Baskets_1.png"
 }
 
-
-
-
-
-
+function RoundPlasticJarIn() {
+    Round_Plastic_Jar.src = "Images/Round Plastic Jar_2.jpg"
+}
+function RoundPlasticJarOut() {
+    Round_Plastic_Jar.src = "Images/Round Plastic Jar_1.jpg"
+}
 
 function Sumbit() {
     var uname = document.getElementById("userName").value;
@@ -129,4 +106,6 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
+
+
 

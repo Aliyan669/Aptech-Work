@@ -22,6 +22,12 @@ nav {
     color: #d1ab81;
     height: 14vh;
     margin-top: -6px;
+    position: sticky !important;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
 }
 
 ul li a {
@@ -242,13 +248,6 @@ ul li {
 
 }
 
-/* form {
-    padding: 30px 30px;
-    border: 1px solid blue;
-    width: 100%;
-} */
-
-
 .inp {
     /* margin-top: 0px; */
     /* border: 3px solid purple; */
@@ -295,7 +294,7 @@ textarea {
     height: 46vh;
     background-color: #634436;
     border: 1px solid transparent;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .mainpart {
@@ -434,7 +433,112 @@ hr {
     margin-top: 15px !important;
 }
 
+.productsection {
+    width: 100%;
+    /* height: 67vh; */
+    /* border: 1px solid red;   */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
 
+.sec5 {
+    width: 40%;
+    /* height: 60vh; */
+    /* border: 1px solid blue; */
+    /* display: flex; */
+    /* justify-content: center; */
+}
+
+.sec5 img {
+    border-radius: 5px;
+}
+
+.secondimage {
+    margin-top: 15px;
+}
+
+.sec6 {
+    width: 42%;
+    /* height: 80vh; */
+    /* border: 1px solid rgb(185, 6, 6); */
+    border-radius: 5px;
+    padding: 10px 40px;
+}
+
+.stars {
+    color: #634436;
+    font-size: 16px;
+    margin: 15px 0px;
+}
+
+.quan {
+    margin: 5px 0px 10px 0px;
+}
+
+.pricelar {
+    font-size: 18px;
+    margin-top: 30px !important;
+}
+
+#atc {
+    width: 100%;
+    border: 1.5px solid #634436;
+    color: #634436;
+    margin-top: 15px;
+}
+
+#buy {
+    width: 100%;
+    margin: 10px 0px;
+    background-color: #634436;
+    color: #f3ca9b;
+}
+
+.des {
+    margin-top: 10px;
+}
+
+.trust {
+    color: #634436;
+}
+
+#testimg {
+    width: 30% !important;
+    height: 19vh;
+    border-radius: 70%;
+}
+
+#testbody h5 {
+    text-align: center;
+}
+
+#testbody p {
+
+    color: #707070;
+}
+
+.test {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.teststar {
+    width: 100%;
+    text-align: center;
+    color: #634436;
+    font-size: 13px;
+    margin-bottom: 4px;
+}
+
+#testcard {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 10px;
+}
 
 
 
@@ -591,5 +695,24 @@ hr {
 
     .last {
         margin-bottom: 18px !important;
+    }
+
+    .productsection {
+        height: auto;
+        /* margin-bottom: 0px; */
+    }
+
+    .sec5 {
+        width: 95%;
+    }
+
+    .sec6 {
+        width: 95%;
+        margin-top: 10px;
+        padding: 0px;
+    }
+
+    #testimg {
+        height: 15vh;
     }
 }
