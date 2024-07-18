@@ -88,6 +88,34 @@ function Sumbit() {
     }
 }
 
+//////   Autocomplete Jquery Plugin   ////// 
+
+var suggestion = ['Bottles', 'Jars', 'Wooden Baskets']
+$('#searchinp').autocomplete({
+    source: suggestion
+})
+
+function Search() {
+    var user = $('#searchinp').val()
+    console.log(user)
+    if (user == 'Bottles') {
+        $('.Jars').hide()
+        $('.Wooden').hide()
+
+    }
+    else if (user == 'Jars') {
+        $('.Bottles').hide()
+        $('.Wooden').hide()
+
+    }
+    else if (user == 'Wooden Baskets') {
+        $('.Bottles').hide()
+        $('.Jars').hide()
+       
+    }
+}
+
+
 //////   Owl Carousel Jquery Plugin   ////// 
 
 $('.owl-carousel').owlCarousel({
