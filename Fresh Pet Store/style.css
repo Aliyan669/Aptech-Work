@@ -34,18 +34,51 @@ ul li a {
     color: #d1ab81 !important;
 }
 
-ul li a.active {
-    color: #edbc84 !important;
+nav ul li {
+    margin: 0px 5px;
 }
+
+nav a {
+    position: relative;
+    /* border: 1px solid  #f3ca9b; */
+}
+
+nav a::before {
+    content: "";
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+    width: 00%;
+    height: 2px;
+    background-color: #edbc84 !important;
+    text-align: center;
+    margin-left: 8px;
+    border-radius: 5px;
+    transition: all .5s;
+}
+
+nav a:hover::before {
+    color: #edbc84 !important;
+    width: 80%;
+}
+
+nav .navbar-brand:hover::before {
+    color: #edbc84 !important;
+    width: 0%;
+}
+
+/* nav a.active::before {
+    width: 80%;
+} */
 
 nav ul li a:hover {
     color: #edbc84 !important;
 }
 
-
-ul li {
-    margin: 0px 5px;
+nav ul li a.active {
+    color: #edbc84 !important;
 }
+
 
 .carticons {
     margin: 10px 0px 0px 25px;
@@ -198,6 +231,22 @@ ul li {
     text-align: center !important;
     /* margin-top: 10px; */
 }
+
+#collec_img {
+    overflow: hidden;
+
+}
+
+#collec_img img {
+
+    width: 100% !important;
+    transition: scale 400ms;
+}
+
+#collec_img:hover img {
+    scale: 102%;
+}
+
 
 .collec_card_2 {
     width: 26%;
@@ -565,6 +614,12 @@ hr {
         text-align: center;
     }
 
+    nav a:hover::before {
+        color: #edbc84 !important;
+        width: 28%;
+        margin-left: 105px;
+    }
+
     .carticons {
         text-align: center;
 
@@ -605,6 +660,7 @@ hr {
 
 
     }
+
 
     .collec_card_2 {
         width: 95%;
