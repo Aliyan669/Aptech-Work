@@ -67,10 +67,6 @@ nav .navbar-brand:hover::before {
     width: 0%;
 }
 
-/* nav a.active::before {
-    width: 80%;
-} */
-
 nav ul li a:hover {
     color: #edbc84 !important;
 }
@@ -78,7 +74,6 @@ nav ul li a:hover {
 nav ul li a.active {
     color: #edbc84 !important;
 }
-
 
 .carticons {
     margin: 10px 0px 0px 25px;
@@ -88,7 +83,6 @@ nav ul li a.active {
     margin: 0px 7px;
     font-size: 20px;
     cursor: pointer;
-
 }
 
 .carticons i:hover {
@@ -108,7 +102,6 @@ nav ul li a.active {
 #searchinp::placeholder {
     color: #9f805d !important;
 }
-
 
 .dropdown-menu {
     background-color: #634436 !important;
@@ -168,13 +161,10 @@ nav ul li a.active {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* margin-bottom: 20px; */
 }
-
 
 .sec1 {
     width: 44%;
-    /* height: 60vh; */
     /* border: 1px solid blue; */
 }
 
@@ -184,16 +174,11 @@ nav ul li a.active {
 
 .sec2 {
     width: 44%;
-    /* height: 80vh; */
     /* border: 1px solid rgb(185, 6, 6); */
     border-radius: 5px;
     padding: 15px 25px;
 }
 
-/* #box {
-    width: 100%;
-    max-width: 400px;
-} */
 #buybtn {
     width: 100%;
     background-color: #634436;
@@ -229,7 +214,6 @@ nav ul li a.active {
 
 .card-text {
     text-align: center !important;
-    /* margin-top: 10px; */
 }
 
 #collec_img {
@@ -273,12 +257,10 @@ nav ul li a.active {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* margin-bottom: 20px; */
 }
 
 .sec3 {
     width: 44%;
-    /* height: 60vh; */
     /* border: 1px solid blue; */
 }
 
@@ -288,20 +270,12 @@ nav ul li a.active {
 
 .sec4 {
     width: 46%;
-    /* height: 70vh; */
-    /* border: 1px solid yellow; */
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     padding: 5px 30px;
-
 }
 
 .inp {
-    /* margin-top: 0px; */
     /* border: 3px solid purple; */
     width: 100%;
-
 }
 
 .form input {
@@ -323,7 +297,6 @@ textarea {
     outline: none;
     border: none;
     border: 1px solid #a5a5a5;
-
 }
 
 .formbtn {
@@ -334,9 +307,7 @@ textarea {
     cursor: pointer;
     border: none;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-
 }
-
 
 .mainparent {
     width: 100%;
@@ -354,7 +325,6 @@ textarea {
     align-items: center;
     flex-wrap: wrap;
     /* border: 1px solid yellow; */
-
 }
 
 .part1 {
@@ -399,7 +369,6 @@ textarea {
 .part3 ul {
     list-style: none;
     color: #d1ab81;
-
 }
 
 .part3 ul li {
@@ -409,7 +378,6 @@ textarea {
 .part2 ul li a {
     text-decoration: none;
     color: #d1ab81;
-
 }
 
 .part2 ul li a.active {
@@ -418,18 +386,15 @@ textarea {
 
 .part2 ul li a:hover {
     color: #edbc84 !important;
-
 }
 
 .part3 ul li a {
     text-decoration: none;
     color: #edbc84;
-
 }
 
 .part3 ul li a:hover {
     color: #edbc84 !important;
-
 }
 
 #intro {
@@ -442,7 +407,6 @@ textarea {
     /* border: 1px solid yellow; */
     display: flex;
     justify-content: center;
-
 }
 
 .part4 i {
@@ -461,8 +425,6 @@ textarea {
     text-align: center;
     margin: 0px 0px !important;
     font-size: 14px;
-    /* margin-bottom: 20px !important; */
-
 }
 
 .last b {
@@ -494,10 +456,6 @@ hr {
 
 .sec5 {
     width: 40%;
-    /* height: 60vh; */
-    /* border: 1px solid blue; */
-    /* display: flex; */
-    /* justify-content: center; */
 }
 
 .sec5 img {
@@ -510,7 +468,6 @@ hr {
 
 .sec6 {
     width: 42%;
-    /* height: 80vh; */
     /* border: 1px solid rgb(185, 6, 6); */
     border-radius: 5px;
     padding: 10px 40px;
@@ -555,7 +512,7 @@ hr {
 
 #testimg {
     width: 30% !important;
-    height: 19vh;
+    height: 17vh;
     border-radius: 70%;
 }
 
@@ -564,7 +521,6 @@ hr {
 }
 
 #testbody p {
-
     color: #707070;
 }
 
@@ -589,9 +545,62 @@ hr {
     padding: 10px;
 }
 
+.cartparent {
+    width: 50%;
+    height: auto;
+    /* border: 1px solid red; */
+    display: flex;
+    padding: 20px;
+    border-radius: 5px;
+    justify-content: space-between;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    flex-wrap: wrap;
+}
 
+.atcimg {
+    width: 40%;
+    height: auto;
+    /* border: 1px solid blue; */
+}
 
+.atcimg img {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
 
+.atccontent {
+    width: 55%;
+    height: auto;
+    /* border: 1px solid orange; */
+    padding: 20px;
+}
+
+.atccontent span {
+    margin: 10px 0px;
+}
+
+.feedbacksection {
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sec7 {
+    width: 44%;
+    /* border: 1px solid blue; */
+}
+
+.sec7 img {
+    border-radius: 5px;
+}
+
+.sec8 {
+    width: 46%;
+    padding: 5px 30px;
+}
 
 
 
@@ -607,7 +616,6 @@ hr {
     .collapse {
         display: flex;
         justify-content: center;
-
     }
 
     nav ul li {
@@ -617,12 +625,11 @@ hr {
     nav a:hover::before {
         color: #edbc84 !important;
         width: 28%;
-        margin-left: 105px;
+        margin-left: 90px;
     }
 
     .carticons {
         text-align: center;
-
     }
 
     .introduce {
@@ -657,10 +664,7 @@ hr {
         height: auto;
         width: 95%;
         margin: 15px 0px 15px 0px;
-
-
     }
-
 
     .collec_card_2 {
         width: 95%;
@@ -705,14 +709,11 @@ hr {
     .mainparent {
         /* margin-top: 100px; */
         height: auto;
-
     }
 
     .mainpart {
         width: 100%;
         height: auto;
-
-
     }
 
     .part1 {
@@ -729,7 +730,6 @@ hr {
 
     .part2 ul {
         text-align: center;
-
     }
 
     .part3 ul {
@@ -770,5 +770,41 @@ hr {
 
     #testimg {
         height: 15vh;
+    }
+
+    .cartparent {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .atcimg {
+        width: 100%;
+    }
+
+    .atccontent {
+        width: 100%;
+        text-align: center;
+    }
+
+    .feedbacksection {
+        height: auto;
+        margin-bottom: 0px;
+    }
+
+    .sec7 {
+        width: 95%;
+    }
+
+    .sec8 {
+        width: 90%;
+        margin-top: 10px;
+        padding: 0px;
+    }
+
+    .formbtn {
+        width: 110px;
+        font-size: 14px;
+        padding: 7px;
     }
 }

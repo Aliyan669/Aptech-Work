@@ -33,6 +33,7 @@ function LitreGlassBottleOut() {
     Litre_Glass_Bottle.src = "Images/Litre Glass Bottle_1.jpg"
 }
 
+
 /// New Arrivals
 
 var Trans_Glass_Bottle = document.getElementById('Trans-Glass-Bottle');
@@ -134,6 +135,3 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
-
-
-
