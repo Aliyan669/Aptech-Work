@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Product</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="Bootstrap-Jquery/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap" rel="stylesheet">
+
+    <!-- //////   Owl Carousel Jquery Link   //////  -->
+
+    <link rel="stylesheet" href="Bootstrap-Jquery/css/owl.carousel.css">
+    <link rel="stylesheet" href="Bootstrap-Jquery/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="Bootstrap-Jquery/css/owl.theme.default.css">
+
+    <!-- //////   Autocomplete Jquery Link   //////  -->
+
+    <link rel="stylesheet" href="Autocomplete/jquery-ui.css">
+    <link rel="stylesheet" href="Autocomplete/jquery-ui.min.css">
+    <link rel="stylesheet" href="Autocomplete/jquery-ui.structure.css">
+
+
+</head>
+
+<body>
+
+    <!-- Marquee -->
+
+    <marquee behavior="scroll" direction="">Welcome to Our Website
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        50% Off on All Orders
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Free Shipping All Over Pakistan
+    </marquee>
+
+
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="Images/logo.png" alt=""></a>
+            <button id="toggle" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="allproducts.html" id="navbarDropdownMenuLink"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Category
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="bottles.html">Bottles</a></li>
+                            <li><a class="dropdown-item" href="jars.html">Jars</a></li>
+                            <li><a class="dropdown-item " href="woodbaskets.html">Wood Baskets</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="allproducts.html">All Product</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactus.html">Contact Us</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="feedback.html">Feedback</a>
+                    </li>
+                    <form action="#" class="d-flex" id="search">
+                        <input id="searchinp" class="form-control me-2" type="search" placeholder="Search"
+                            aria-label="Search">
+                        <button onclick="Search()" id="searchbtn" class="btn">Search</button>
+                    </form>
+                    <div class="carticons"><i class="fa-solid fa-cart-shopping"></i><i class="fa-solid fa-user"></i>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- All Prodcuts Card  -->
+
+    <div>
+        <h1 class="introduce"><span>All Products</span></h1>
+    </div>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-3 col-6">
+                <div class="card Bottles">
+                    <a href="./Product/Litreplasticbottle.html"><img alt="Title" class="card-img-top"
+                            id="Litre-Plastic-Bottle" onmouseover="LitrePlasticBottleIn()"
+                            onmouseleave="LitrePlasticBottleOut()" src="Images/Litre Plastic Bottle_1.jpg"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Litre Plastic Bottle</h5>
+                        <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i
+                                class="fa-regular fa-star"></i>(3.5/5)</div>
+                        <span class="card-text"><del>Rs.65.00</del></span>&nbsp;&nbsp;<span
+                            class="card-text price">Rs.45.00</span>
+                        <br /><br /> <a href="./Product/Litreplasticbottle.html"><button id="buybtn" class="btn "
+                                type="submit">Buy Now</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-6">
+                <div class="card Bottles">
+                    <a href="./Product/sauceglassbottle.html"><img alt="Title" class="card-img-top"
+                            src="Images/Sauce Glass Bottle.jpg"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Sauce Glass Bottle</h5>
+                        <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i
+                                class="fa-regular fa-star"></i>(3/5)</div>
+                        <span class="card-text"><del>Rs.150.00</del></span>&nbsp;&nbsp;<span
+                            class="card-text price">Rs.110.00</span>
+                        <br /><br /> <a href="./Product/sauceglassbottle.html"><button id="buybtn" class="btn "
+                                type="submit">Buy Now</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-6">
+                <div class="card Jars">
+                    <a href="./Product/ovalglassjar.html"><img alt="Title" class="card-img-top" id="Oval-Glass-Jar"
+                            onmouseover="OvalGlassJarIn()" onmouseleave="OvalGlassJarOut()"
+                            src="Images/Oval Glass Jar_1.jpg"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Oval Glass Storage Jar</h5>
+                        <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-regular fa-star"></i>(4/5)</div>
+                        <span class="card-text"><del>Rs.350.00</del></span>&nbsp;&nbsp;<span
+                            class="card-text price">Rs.250.00</span>
+                        <br /><br /> <a href="./Product/ovalglassjar.html"><button id="buybtn" class="btn "
+                                type="submit">Buy Now</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-6">
+                <div class="card Jars">
+                    <a href="./Product/specialplasticjar.html"><img alt="Title" class="card-img-top"
+                            id="Special-Plastic-Jar" onmouseover="SpecialPlasticJarIn()"
+                            onmouseleave="SpecialPlasticJarOut()" src="Images/Special Plastic Jar_1.jpg"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Special Plastic Jar</h5>
+                        <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star-half-stroke"></i>(4.5/5)</div>
+                        <span class="card-text"><del>Rs.150.00</del></span>&nbsp;&nbsp;<span
+                            class="card-text price">Rs.120.00</span>
+                        <br /><br /> <a href="./Product/specialplasticjar.html"><button id="buybtn" class="btn "
+                                type="submit">Buy Now</button></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row second_row">
+
+            <div class="col-lg-3 col-6">
+                <div class="card Wooden">
+                    <a href="./Product/brownwoodbaskets.html"><img alt="Title" class="card-img-top"
+                            id="Brown-Wood-Baskets" onmouseover="BrownWoodBasketsIn()"
+                            onmouseleave="BrownWoodBasketsOut()" src="Images/Brown Wood Baskets_1.png"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Brown Wood Baskets</h5>
+                        <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star-half-stroke"></i>(4.5/5)</div>
+                        <span class="card-text"><del>Rs.950.00</del></span>&nbsp;&nbsp;<span
+                            class="card-text price">Rs.850.00</span>
+                        <br /><br /> <a href="./Product/brownwoodbaskets.html"><button id="buybtn" class="btn "
+                                type="submit">Buy Now</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-6">
+                <div class="card Wooden">
+                    <a href="./Product/greywoodbaskets.html"><img alt="Title" class="card-img-top" id="Grey-Wood-Basket"
+                            onmouseover="GreyWoodBasketIn()" onmouseleave="GreyWoodBasketOut()"
+                            src="Images/Grey Wood Baskets_1.png"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Grey Wood Baskets</h5>
+                        <div class="star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i
+                                class="fa-regular fa-star"></i>(3.5/5)</div>
+                        <span class="card-text"><del>Rs.900.00</del></span>&nbsp;&nbsp;<span
+                            class="card-text price">Rs.750.00</span>
+                        <br /><br /> <a href="./Product/greywoodbaskets.html"><button id="buybtn" class="btn "
+                                type="submit">Buy Now</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-6">
+                <div class="card Jars">
+                    <a href="./Product/hexagonglassjar.html"><img alt="Title" class="card-img-top"
+                            id="Hexagon-Glass-Jar" onmouseover="HexagonGlassJarIn()" onmouseleave="HexagonGlassJarOut()"
+                            src="Images/Hexagon Glass Jar_1.jpg"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Hexagon Glass Jar</h5>
+                        <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i>(5/5)</div>
+                        <span class="card-text"><del>Rs.200.00</del></span>&nbsp;&nbsp;<span
+                            class="card-text price">Rs.125.00</span>
+                        <br /><br /> <a href="./Product/hexagonglassjar.html"><button id="buybtn" class="btn "
+                                type="submit">Buy Now</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-6">
+                <div class="card Jars">
+                    <a href="./Product/roundplasticjar.html"><img alt="Title" class="card-img-top"
+                            id="Round-Plastic-Jar" onmouseover="RoundPlasticJarIn()" onmouseleave="RoundPlasticJarOut()"
+                            src="Images/Round Plastic Jar_1.jpg"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Round Plastic Jar</h5>
+                        <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star-half-stroke"></i>(4.5/5)</div>
+                        <span class="card-text"><del>Rs.70.00</del></span>&nbsp;&nbsp;<span
+                            class="card-text price">Rs.50.00</span>
+                        <br /><br /> <a href="./Product/roundplasticjar.html"><button id="buybtn" class="btn "
+                                type="submit">Buy Now</button></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row second_row">
+
+            <div class="col-lg-3 col-6">
+                <div class="card Bottles">
+                    <a href="./Product/transparentglassbottle.html"><img alt="Title" class="card-img-top"
+                            id="Trans-Glass-Bottle" onmouseover="TransGlassBottleIn()"
+                            onmouseleave="TransGlassBottleOut()" src="Images/Transparent Glass Bottle_1.jpg"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Transparent Glass Bottle</h5>
+                        <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-regular fa-star"></i>(4/5)</div>
+                        <span class="card-text"><del>Rs.200.00</del></span>&nbsp;&nbsp;<span
+                            class="card-text price">Rs.150.00</span>
+                        <br /><br /> <a href="./Product/transparentglassbottle.html"><button id="buybtn" class="btn "
+                                type="submit">Buy Now</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-6">
+                <div class="card Bottles">
+                    <a href="./Product/litreglassbottle.html"><img alt="Title" class="card-img-top"
+                            id="Litre-Glass-Bottle" onmouseover="LitreGlassBottleIn()"
+                            onmouseleave="LitreGlassBottleOut()" src="Images/Litre Glass Bottle_1.jpg"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Litre Glass Bottle</h5>
+                        <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i
+                                class="fa-regular fa-star"></i>(3/5)</div>
+                        <span class="card-text"><del>Rs.400.00</del></span>&nbsp;&nbsp;<span
+                            class="card-text price">Rs.280.00</span>
+                        <br /><br /> <a href="./Product/litreglassbottle.html"><button id="buybtn" class="btn "
+                                type="submit">Buy Now</button></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ///// Footer ////// -->
+    <br />
+    <footer>
+        <div class="mainparent">
+            <div class="mainpart">
+                <div class="part1">
+                    <img src="Images/logo.png" width="60%" srcset="">
+                    <p>Welcome to Fresh Pet Store! At Fresh Pet Store, we are dedicated to providing high-quality
+                        PET bottles, jars, and related items
+                        to meet all your packaging needs.</p>
+                </div>
+                <div class="part2">
+                    <ul>
+                        <li><a class="active" href="index.html">Home</a></li>
+                        <li><a href="allproducts.html">All Product</a></li>
+                        <li><a href="aboutus.html">About us</a></li>
+                        <li><a href="contactus.html">Contact us</a></li>
+
+                    </ul>
+
+                </div>
+                <div class="part3">
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Condition</a></li>
+                        <li><a href="#">Disclaimer</a></li>
+                        <li><a href="#">Contact Information</a></li>
+                    </ul>
+                </div>
+                <div class="part4">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+
+            <p class="last">2024 ©Copyright <b> Fresh Pet Store</b></p>
+        </div>
+    </footer>
+</body>
+
+<script src="Bootstrap-Jquery/js/bootstrap.bundle.min.js"></script>
+<script src="Bootstrap-Jquery/js/jquery-3.7.1.min.js"></script>
+<script src="Bootstrap-Jquery/js/owl.carousel.js"></script>
+<script src="Bootstrap-Jquery/js/owl.carousel.min.js"></script>
+<script src="Autocomplete/jquery-ui.js"></script>
+<script src="Autocomplete/jquery-ui.min.js"></script>
+<script src="app.js"></script>
+
+</html>

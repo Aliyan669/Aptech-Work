@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add to Cart</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" href="../Images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../Bootstrap-Jquery/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap" rel="stylesheet">
+
+    <!-- //////   Owl Carousel Jquery Link   //////  -->
+
+    <link rel="stylesheet" href="../Bootstrap-Jquery/css/owl.carousel.css">
+    <link rel="stylesheet" href="../Bootstrap-Jquery/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../Bootstrap-Jquery/css/owl.theme.default.css">
+
+    <!-- //////   Magnify Jquery Link   //////  -->
+
+    <link href="../Bootstrap-Jquery/css/magnify.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Marquee -->
+
+    <marquee behavior="scroll" direction="">Welcome to Our Website
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        50% Off on All Orders
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Free Shipping All Over Pakistan
+    </marquee>
+
+
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="../Images/logo.png" alt=""></a>
+            <button id="toggle" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="../allproducts.html" id="navbarDropdownMenuLink"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Category
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="../bottles.html">Bottles</a></li>
+                            <li><a class="dropdown-item" href="../jars.html">Jars</a></li>
+                            <li><a class="dropdown-item " href="../woodbaskets.html">Wood Baskets</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item " href="../allproducts.html">All Product</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contactus.html">Contact Us</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../feedback.html">Feedback</a>
+                    </li>
+                    <form class="d-flex" id="search">
+                        <input id="searchinp" class="form-control me-2" type="search" placeholder="Search"
+                            aria-label="Search">
+                        <button id="searchbtn" class="btn " type="submit">Search</button>
+                    </form>
+                    <div class="carticons"><i class="fa-solid fa-cart-shopping"></i><i class="fa-solid fa-user"></i>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div>
+        <h1 class="introduce"><span>Add to Cart</span></h1>
+    </div>
+
+    <div class="container">
+        <div class="cartparent">
+            <div class="atcimg">
+                <img src="" id="item-image" width="100px" alt="" srcset="">
+            </div>
+            <div class="atccontent">
+                <b>Item Name: </b><span id="item-name"></span><br /><br />
+                <b>Item Price: </b> <span id="item-price"></span><br /><br />
+                <b>Item Quanity: </b> <span id="item-quanity"></span><br /><br />
+                <b>Total Amount: </b><span id="item-total"></span>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+<script>
+    //  console.log(localStorage.getItem("Data"))
+
+    function displayCartDetails() {
+        var storedData = localStorage.getItem("Data");
+        if (storedData) {
+            var data = JSON.parse(storedData);
+            document.getElementById('item-name').innerText = data.name;
+            document.getElementById('item-price').innerText = data.price;
+            document.getElementById('item-image').src = data.Image;
+            document.getElementById('item-quanity').innerText = data.quantity;
+            document.getElementById('item-total').innerText = data.total;
+        }
+    }
+
+    window.onload = displayCartDetails;
+</script>
+<script src="../Bootstrap-Jquery/js/bootstrap.bundle.min.js"></script>
+<script src="../Bootstrap-Jquery/js/jquery-3.7.1.min.js"></script>
+<script src="../Bootstrap-Jquery/js/owl.carousel.js"></script>
+<script src="../Bootstrap-Jquery/js/owl.carousel.min.js"></script>
+<script src="../Bootstrap-Jquery/js/jquery.magnify.min.js"> </script>
+
+</html>
