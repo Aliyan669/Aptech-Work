@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Recipes</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="https://americanfoodrecipe.web.app/img/re.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ///// Navbar ////// -->
+
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check">
+                <i class="fas fa-bars" id="btn"></i>
+                <i class="fas fa-times" id="cancel"></i>
+            </label>
+            <img src="Images/img.png" width="130px" alt="">
+            <ul>
+                <li><a class="active" href="">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ///// Background Image ////// -->
+
+    <div class="bg_image">
+        <h1>Welcome To Our Cooking Recipes Websites</h1>
+    </div>
+
+
+    <!-- ///// About Us ////// -->
+
+    <div>
+        <h1 class="introduce"><span>About Us</span></h1>
+    </div>
+
+    <div class="section">
+        <div class="sec1"><img width="100%" src="Images/about.jpg" alt="" srcset=""></div>
+        <div class="sec2">
+            <p>Welcome to Cooking Recipe, your ultimate destination for discovering and sharing a diverse array of
+                delicious and nutritious recipes! At Cooking Recipe , we believe that cooking is more than just a daily
+                chore – it’s an art, a passion, and a way to bring people together. Whether you’re a novice in the
+                kitchen or a seasoned chef, we are here to inspire, educate, and guide you through your culinary
+                journey.<br /><br />
+                Our mission is to make cooking accessible, enjoyable, and fulfilling for everyone. We strive to provide
+                a platform where cooking enthusiasts can find a variety of recipes that cater to different tastes,
+                dietary needs, and skill levels. From quick and easy weeknight dinners to elaborate gourmet meals, our
+                collection of recipes is designed to help you create delicious and healthy dishes with
+                confidence.<br /><br />
+                Our website features an extensive library of recipes from around the world. Whether you’re craving a
+                traditional dish, exploring a new cuisine, or looking for healthy meal options, you’ll find something
+                that suits your palate. Our recipes include detailed instructions, ingredient lists, and helpful tips to
+                ensure your cooking experience is smooth and enjoyable.
+                We understand that not everyone is an expert in the kitchen. That’s why our recipes are accompanied by
+                step-by-step guides, photos, and sometimes even videos to help you understand the process and achieve
+                perfect results every time. Our goal is to make cooking a fun and stress-free activity for
+                everyone.<br />
+
+            </p>
+        </div>
+    </div>
+
+
+    <!-- ///// Recipes ////// -->
+
+    <div>
+        <h1 class="introduce" id="intro">Intorduce Our <span> Special Recipe </span></h1>
+    </div>
+
+    <div class="parent">
+        <div class="child1">
+            <input type="checkbox" id="checkcard">
+            <img id="image1" onmouseover="In1()" onmouseleave="Out1()" src="Images/pizza.jpg" width="100%" alt="">
+            <h2>Pizza Making Recipe</h2>
+            <p>Making a homemade pizza is a delightful and rewarding experience. Start with a basic dough by mixing warm
+                water, yeast, sugar, flour, salt, and olive oil, then knead until smooth and let it rise until doubled
+                in size. Once the dough is ready, preheat your oven to its highest setting and prepare your toppings.
+                Roll out the dough on a floured surface to your desired thickness and transfer it to a pizza stone or
+                baking sheet.</p>
+            <div class="content">
+                <p> Spread a generous layer of tomato sauce over the base, then add your favorite toppings such as
+                    mozzarella cheese, pepperoni, mushrooms, bell peppers, and olives. Sprinkle some dried oregano and a
+                    drizzle of olive oil for added flavor. Bake the pizza in the preheated oven for about 10-15 minutes,
+                    or until the crust is golden and the cheese is bubbly and slightly browned. For a finishing touch,
+                    add fresh basil leaves or a sprinkle of Parmesan cheese. Allow the pizza to cool slightly before
+                    slicing and serving.</p>
+                <br /><label for="checkcard">View Less..</label>
+            </div>
+            <label for="checkcard">View More..</label>
+        </div>
+
+        <div class="child2">
+            <input type="checkbox" id="cardwhy">
+            <img id="image2" onmouseover="In2()" onmouseleave="Out2()" src="Images/burger.jpg" width="100%" alt="">
+            <h2>Burger Making Recipe</h2>
+            <p>Creating a delicious homemade burger is a simple yet gratifying culinary adventure. Begin by selecting
+                high-quality ground beef with an 80/20 lean-to-fat ratio, ensuring juicy and flavorful patties. In a
+                bowl, season the beef with salt, pepper, and a dash of Worcestershire sauce, then gently mix without
+                overworking the meat. Form the mixture into equal-sized patties, pressing a slight indentation in the
+                center to prevent puffing cooking.</p>
+            <div class="contentt">
+                <p> Preheat your grill or skillet to medium-high heat and lightly oil the surface. Cook the patties for
+                    about 4-5 minutes per side for medium doneness, adding a slice of cheese in the last minute to melt
+                    if desired. Meanwhile, prepare your burger buns by toasting them until golden. Assemble the burgers
+                    by spreading a layer of your favorite condiments, such as mayonnaise, ketchup, or mustard, on the
+                    bottom bun. Place the cooked patty on top, followed by fresh toppings like lettuce, tomato, onion,
+                    and pickles. Add any additional ingredients like crispy bacon, avocado slices, or a fried egg for
+                    extra flair. </p>
+                <br /><label for="cardwhy">View Less..</label>
+            </div>
+            <label for="cardwhy">View More..</label>
+        </div>
+
+        <div class="child3">
+            <input type="checkbox" id="cardnot">
+            <img id="image3" onmouseover="In3()" onmouseleave="Out3()" src="Images/sandwich.jpg" width="100%" alt="">
+            <h2>Sandwich Making Recipe</h2>
+            <p>To make a delicious sandwich, start by selecting your favorite bread. Whether it's whole wheat,
+                sourdough, or a classic baguette, choose a type that suits your taste and texture preference. Next,
+                gather your desired fillings. For a classic option, consider thinly sliced turkey or ham, crisp lettuce,
+                juicy tomatoes, and creamy mayonnaise. If you're feeling adventurous, experiment with different cheeses
+                like cheddar, Swiss, or pepper jack for added flavor.</p>
+            <div class="contenttt">
+                <p> Spread a generous layer of your chosen condiment on one slice of bread, then layer your fillings
+                    evenly on top. Be sure to distribute them evenly to ensure each bite is packed with flavor. Once
+                    your fillings are in place, carefully place the second slice of bread on top, pressing down gently
+                    to secure the sandwich. Finally, if you prefer a warm sandwich, you can grill it in a panini press
+                    or toaster oven until the bread is golden brown and the cheese is melted.</p>
+                <br /><label for="cardnot">View Less..</label>
+            </div>
+            <label for="cardnot">View More..</label>
+        </div>
+    </div>
+
+
+    <!-- ///// Contact Us ////// -->
+    <div>
+        <h1 class="introduce"> <span> Contact Us </span></h1>
+    </div>
+
+    <div class="parent2">
+        <div class="map"><iframe width="100%" height="100%"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14480.148083300195!2d67.02524265000001!3d24.86258515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e6d06bea525%3A0xca5759c73e8b99ce!2sSaddar%20Karachi%2C%20Karachi%20City%2C%20Sindh!5e0!3m2!1sen!2s!4v1715816362738!5m2!1sen!2s"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+
+        <div class="form">
+            <div class="child">
+                <form action="">
+                    <div class="inp">
+                        <label for="">Name:
+                            <input placeholder="Enter a User Name" id="userName" name="uname" type="text">
+                        </label><br /><br />
+                        <label for="">Email:
+                            <input placeholder="Enter a Email" id="userEmail" name="uemail" type="email">
+                        </label><br /><br />
+                        <label for="">Phone Number:
+                            <input placeholder="Enter a Phone Number" class="input1" id="userNumber" name="unumber">
+                        </label><br /><br />
+                        <label for="">Comment:<br />
+                            <textarea name="" id="" rows="5"></textarea>
+                        </label><br /><br /><br />
+                        <button class="btn" onclick="Sumbit()">Submit</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ///// Footer ////// -->
+
+    <footer>
+        <div class="mainparent">
+            <div class="mainpart">
+                <div class="part1">
+                    <img src="Images/img.png" width="60%" srcset="">
+                    <p>Welcome to Cooking Recipe, your ultimate destination for discovering and sharing a diverse array
+                        of delicious and nutritious recipes! At Cooking Recipe , we believe that cooking is more than
+                        just a daily chore.</p>
+                </div>
+                <div class="part2">
+                    <ul>
+                        <li><a class="active" href="#">Home</a></li>
+                        <li><a href="recipes.html">Recipes</a></li>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                    </ul>
+
+                </div>
+                <div class="part3">
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Condition</a></li>
+                        <li><a href="#">Disclaimer</a></li>
+                        <li><a href="#">Contact Information</a></li>
+                    </ul>
+                </div>
+                <div class="part4">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+            <p class="last">2024 ©Copyright <span> Cooking Recipes</span></p>
+        </div>
+    </footer>
+</body>
+<script src="app.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</html>

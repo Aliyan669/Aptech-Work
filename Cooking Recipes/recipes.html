@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="https://americanfoodrecipe.web.app/img/re.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- ///// Navbar ////// -->
+
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check">
+                <i class="fas fa-bars" id="btn"></i>
+                <i class="fas fa-times" id="cancel"></i>
+            </label>
+            <img src="Images/img.png" width="130px" alt="">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="recipes.html">Recipes</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ///// Recipes ////// -->
+
+    <div>
+        <h1 class="introduce" id="intro">Intorduce Our <span> Special Recipe </span></h1>
+    </div>
+
+    <div class="parent">
+        <div class="child1">
+            <input type="checkbox" id="checkcard">
+            <img id="image1" onmouseover="In1()" onmouseleave="Out1()" src="Images/pizza.jpg" width="100%" alt="">
+            <h2>Pizza Making Recipe</h2>
+            <p>Making a homemade pizza is a delightful and rewarding experience. Start with a basic dough by mixing warm
+                water, yeast, sugar, flour, salt, and olive oil, then knead until smooth and let it rise until doubled
+                in size. Once the dough is ready, preheat your oven to its highest setting and prepare your toppings.
+                Roll out the dough on a floured surface to your desired thickness and transfer it to a pizza stone or
+                baking sheet.</p>
+            <div class="content">
+                <p> Spread a generous layer of tomato sauce over the base, then add your favorite toppings such as
+                    mozzarella cheese, pepperoni, mushrooms, bell peppers, and olives. Sprinkle some dried oregano and a
+                    drizzle of olive oil for added flavor. Bake the pizza in the preheated oven for about 10-15 minutes,
+                    or until the crust is golden and the cheese is bubbly and slightly browned. For a finishing touch,
+                    add fresh basil leaves or a sprinkle of Parmesan cheese. Allow the pizza to cool slightly before
+                    slicing and serving.</p>
+                <br /><label for="checkcard">View Less..</label>
+            </div>
+            <label for="checkcard">View More..</label>
+        </div>
+
+        <div class="child2">
+            <input type="checkbox" id="cardwhy">
+            <img id="image2" onmouseover="In2()" onmouseleave="Out2()" src="Images/burger.jpg" width="100%" alt="">
+            <h2>Burger Making Recipe</h2>
+            <p>Creating a delicious homemade burger is a simple yet gratifying culinary adventure. Begin by selecting
+                high-quality ground beef with an 80/20 lean-to-fat ratio, ensuring juicy and flavorful patties. In a
+                bowl, season the beef with salt, pepper, and a dash of Worcestershire sauce, then gently mix without
+                overworking the meat. Form the mixture into equal-sized patties, pressing a slight indentation in the
+                center to prevent puffing cooking.</p>
+            <div class="contentt">
+                <p> Preheat your grill or skillet to medium-high heat and lightly oil the surface. Cook the patties for
+                    about 4-5 minutes per side for medium doneness, adding a slice of cheese in the last minute to melt
+                    if desired. Meanwhile, prepare your burger buns by toasting them until golden. Assemble the burgers
+                    by spreading a layer of your favorite condiments, such as mayonnaise, ketchup, or mustard, on the
+                    bottom bun. Place the cooked patty on top, followed by fresh toppings like lettuce, tomato, onion,
+                    and pickles. Add any additional ingredients like crispy bacon, avocado slices, or a fried egg for
+                    extra flair. </p>
+                <br /><label for="cardwhy">View Less..</label>
+            </div>
+            <label for="cardwhy">View More..</label>
+        </div>
+
+        <div class="child3">
+            <input type="checkbox" id="cardnot">
+            <img id="image3" onmouseover="In3()" onmouseleave="Out3()" src="Images/sandwich.jpg" width="100%" alt="">
+            <h2>Sandwich Making Recipe</h2>
+            <p>To make a delicious sandwich, start by selecting your favorite bread. Whether it's whole wheat,
+                sourdough, or a classic baguette, choose a type that suits your taste and texture preference. Next,
+                gather your desired fillings. For a classic option, consider thinly sliced turkey or ham, crisp lettuce,
+                juicy tomatoes, and creamy mayonnaise. If you're feeling adventurous, experiment with different cheeses
+                like cheddar, Swiss, or pepper jack for added flavor.</p>
+            <div class="contenttt">
+                <p> Spread a generous layer of your chosen condiment on one slice of bread, then layer your fillings
+                    evenly on top. Be sure to distribute them evenly to ensure each bite is packed with flavor. Once
+                    your fillings are in place, carefully place the second slice of bread on top, pressing down gently
+                    to secure the sandwich. Finally, if you prefer a warm sandwich, you can grill it in a panini press
+                    or toaster oven until the bread is golden brown and the cheese is melted.</p>
+                <br /><label for="cardnot">View Less..</label>
+            </div>
+            <label for="cardnot">View More..</label>
+        </div>
+    </div><br /><br />
+
+    <!-- ///// Footer ////// -->
+
+    <footer>
+        <div class="mainparent">
+            <div class="mainpart">
+                <div class="part1">
+                    <img src="Images/img.png" width="60%" srcset="">
+                    <p>Welcome to Cooking Recipe, your ultimate destination for discovering and sharing a diverse array
+                        of delicious and nutritious recipes! At Cooking Recipe , we believe that cooking is more than
+                        just a daily chore.</p>
+                </div>
+                <div class="part2">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a class="active" href="recipes.html">Recipes</a></li>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                    </ul>
+
+                </div>
+                <div class="part3">
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Condition</a></li>
+                        <li><a href="#">Disclaimer</a></li>
+                        <li><a href="#">Contact Information</a></li>
+                    </ul>
+                </div>
+                <div class="part4">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+            <p class="last">2024 ©Copyright <span> Cooking Recipes</span></p>
+        </div>
+    </footer>
+</body>
+<script src="app.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</html>
