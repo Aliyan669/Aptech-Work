@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <p id="item-name"></p>
+   <p id="item-price"></p>
+   <img id="" src="" alt="">
+</body>
+<script >
+    //  console.log(localStorage.getItem("Data"))
+
+    function displayCartDetails() {
+    var storedData = localStorage.getItem("Data");
+    if (storedData) {
+        var data = JSON.parse(storedData);
+
+        // Insert data into HTML elements
+        document.getElementById('item-name').textContent = data.name;
+        document.getElementById('item-price').textContent = data.price;
+        document.getElementById('item-quantity').textContent = data.quanity;
+        document.getElementById('item-total').textContent = data.total;
+    }
+}
+
+// Call the display function when the page loads
+window.onload = displayCartDetails;
+</script>
+</html>

@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+
+    <!-- //////   Owl Carousel Jquery Plugin Link   //////  -->
+
+    <link rel="stylesheet" href="Owl Carousel/Css/owl.carousel.css">
+    <link rel="stylesheet" href="Owl Carousel/Css/owl.carousel.min.css">
+    <link rel="stylesheet" href="Owl Carousel/Css/owl.theme.default.css">
+
+
+    <!-- //////   Magnify Jquery Plugin Link   //////  -->
+
+    <link href="Magnify/Css/magnify.css" rel="stylesheet">
+
+
+    <!-- //////   Autocomplete Jquery Plugin Link   //////  -->
+
+    <link rel="stylesheet" href="AutoComplete/Css/jquery-ui.css">
+    <link rel="stylesheet" href="AutoComplete/Css/jquery-ui.min.css">
+    <link rel="stylesheet" href="AutoComplete/Css/jquery-ui.structure.css">
+
+    <!-- //////   TwentyTwenty Jquery Plugin Link   //////  -->
+
+    <link rel="stylesheet" href="TwentyTwenty/Css/twentytwenty.css">
+</head>
+
+<body>
+    <div>
+        <h1>Welcome to Our Website</h1>
+        <input type="search" placeholder="Please Enter a Value" class="inp">
+        <button onclick="Search()">Search</button><br /><br />
+        <button onclick="Dark()">Dark Mode</button>
+        <button onclick="Light()">Light Mode</button>
+    </div><br />
+
+    <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ipsum repellendus dolore quo sed
+        explicabo eveniet cupiditate ipsam? Placeat, quae sequi ipsa consectetur reiciendis id. Officiis deserunt quasi
+        laborum? Natus laudantium nam consequatur, quasi eaque velit molestias deleniti commodi perspiciatis assumenda
+        reiciendis magni minima voluptatum recusandae animi. Consequuntur dolorum tenetur molestiae laboriosam. Odit
+        debitis nam ipsum asperiores vitae beatae exercitationem incidunt doloribus, dolores maiores aspernatur eveniet
+        quasi provident consectetur praesentium vero impedit modi suscipit dolorum aliquid minima doloremque quam
+        tempora repellendus. Tempora laudantium asperiores accusantium id rem, molestiae impedit ratione saepe esse illo
+        minus neque ipsa, commodi perferendis quibusdam sint!</p>
+    <button id="butn">Toggle</button><br>
+
+    <form action="#">
+        <textarea id="ta">This is my Text Area</textarea>
+    </form>
+
+
+   <!-- ///// Image Comparison TwentyTwenty //// -->
+    <div id="container1">
+        <!-- The before image is first -->
+        <img src="Images/banner_1.jpg" />
+        <!-- The after image is last -->
+        <img src="Images/banner_2.jpg" />
+    </div>
+
+    
+    <div class="owl-carousel owl-theme">
+        <div class="item">
+            <div class="card Green">
+                <a href="Images/img1.webp"><img alt="Title" class="card-img-top zoom" id="box"
+                        src="Images/img1.webp"></a>
+                <div class="card-body">
+                    <h4 class="card-title">Half Sleeves Men's T-Shirts FF-Keren</h4>
+                    <p class="card-text">99</p>
+                    <input type="number" placeholder="Please Enter a Value" class="quan-1">
+                    <button onclick="addtocart(99,1)">Add to Card</button><br /><br />
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="card White">
+                <a href="Images/img2.webp"><img alt="Title" class="card-img-top zoom" id="box"
+                        src="Images/img2.webp"></a>
+                <div class="card-body">
+                    <h4 class="card-title">Men's T-Shirt Round Akatsuki Logo</h4>
+                    <p class="card-text">89</p>
+                    <input type="number" placeholder="Please Enter a Value" class="quan-2">
+                    <button onclick="addtocart(89,2)">Add to Card</button><br /><br />
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="card Green">
+                <a href="Images/img3.webp"><img alt="Title" class="card-img-top zoom" id="box"
+                        src="Images/img3.webp"></a>
+                <div class="card-body">
+                    <h4 class="card-title">Prove-Them-Wrong-009 Half Sleeves</h4>
+                    <p class="card-text">199</p>
+                    <input type="number" placeholder="Please Enter a Value" class="quan-3">
+                    <button onclick="addtocart(199,3)">Add to Card</button><br /><br />
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="card Blue">
+                <a href="Images/img4.webp"><img alt="Title" class="card-img-top zoom" id="box"
+                        src="Images/img4.webp"></a>
+                <div class="card-body">
+                    <h4 class="card-title">WE ARE NOT BEGGERS 001 Round Neck T Shirt</h4>
+                    <p class="card-text">109</p>
+                    <input type="number" placeholder="Please Enter a Value" class="quan-4">
+                    <button onclick="addtocart(109,4)">Add to Card</button><br /><br />
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="card Blue">
+                <a href="Images/img5.webp"><img alt="Title" class="card-img-top zoom" id="box"
+                        src="Images/img5.webp"></a>
+                <div class="card-body">
+                    <h4 class="card-title">Make It Happen-011 Half Sleeves T Shirt</h4>
+                    <p class="card-text">99</p>
+                    <input type="number" placeholder="Please Enter a Value" class="quan-5">
+                    <button onclick="addtocart(99,5)">Add to Card</button><br /><br />
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="card White">
+                <a href="Images/img6.webp"><img alt="Title" class="card-img-top zoom" id="box"
+                        src="Images/img6.webp"></a>
+                <div class="card-body">
+                    <h4 class="card-title">Think-Outside-The-Box-001 Half Sleeves T Shirt</h4>
+                    <p class="card-text">89</p>
+                    <input type="number" placeholder="Please Enter a Value" class="quan-6">
+                    <button onclick="addtocart(89,6)">Add to Card</button><br /><br />
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="card Red">
+                <a href="Images/img7.webp"><img alt="Title" class="card-img-top zoom" id="box"
+                        src="Images/img7.webp"></a>
+                <div class="card-body">
+                    <h4 class="card-title">Belive In Yourself-011 Round Neck Half Sleeves T Shirt</h4>
+                    <p class="card-text">99</p>
+                    <input type="number" placeholder="Please Enter a Value" class="quan-7">
+                    <button onclick="addtocart(99,7)">Add to Card</button><br /><br />
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<!-- ///// Js Link //// -->
+
+<script src="Jquery/Js/jquery-3.7.1.min.js"></script>
+<script src="Owl Carousel/Js/owl.carousel.js"></script>
+<script src="Owl Carousel/Js/owl.carousel.min.js"></script>
+<script src="Magnify/Js/jquery.magnify.min.js"></script>
+<script src="AutoComplete/Js/jquery-ui.js"></script>
+<script src="AutoComplete/Js/jquery-ui.min.js"></script>
+<script src="TwentyTwenty/Js/jquery.event.move.js"></script>
+<script src="TwentyTwenty/Js/jquery.twentytwenty.js"></script>
+
+
+
+<script>
+    $(document).ready(function () {
+        console.log("We are Using Jquery")
+
+        /// Selectors ///
+        /// There are three main type of Selector in Jquery
+        // 1. Element Selector
+        // 2. Class Selector
+        // 3. Id Selector
+
+        // $('h1').click(function() {
+        //     console.log("You Click on H1 Element ")
+        // })
+
+        // $('.h1').click(function() {
+        //     console.log("You Click on class H1 ")
+        // })
+
+        // $('#h1').click(function() {
+        //     console.log("You Click on id H1")
+        // })
+
+
+        //// Event in Jquery  //// 
+        // Mouse Event = click, dbclick, mouseenter, mouseleave, Hover
+        // keyboard Event = keypress, keyup, keydown, MediaKeyStartusMap
+        // Form Event = submit, change, focus and blur
+        // Document/ Window Event = load, resize, scroll, unload
+
+        /// Mouse Event //
+
+        // $('h1').click(function() {
+        //     console.log("You Click on H1 Tag")
+        // })
+
+        // $('h1').dblclick(function() {
+        //     console.log("You Double Click on H1 Tag")
+        // })
+
+        // $('h1').mouseenter(function() {
+        //     console.log("You Mouse Enter on H1 Tag")
+        // })
+
+        // $('h1').mouseleave(function() {
+        //     console.log("You Mouse Enter on H1 Tag")
+        // })
+
+        // $('h1').hover(function() {
+        //     console.log("You Hover on H1 Tag")
+        // })
+
+
+        //// Multiple Event Attached in Single Element ///
+        // Using (on) Method
+
+        // $('h1').on({
+        //     click: function(){
+        //       console.log("You Click on H1 Elemnet")
+        //     },
+        //     mouseenter:function(){
+        //       console.log("You Mouse Enter on H1 Elemnet")
+        //     },
+
+        // })
+
+
+        /// Hide, Show & Toggle Methods  ///
+
+        // $('.lorem').hide(1000, function(){
+        //     console.log("You Hide on Paragraph")
+        // })
+
+        // $('.lorem').show(1000, function(){
+        //     console.log("You Show on Paragraph")
+        // })
+
+        // $('#butn').click(function(){
+        //     $('.lorem').toggle(1000)
+        // })
+
+
+        /// Fadein, Fadeout, FadeToggle Methods  ///
+
+        // $('#butn').click(function(){
+        //     $('.lorem').fadeOut(1000)
+        // })
+
+        // $('#butn').click(function(){
+        //     $('.lorem').fadeIn(5000)
+        // })
+
+        // $('#butn').click(function(){
+        //     $('.lorem').fadeToggle(1000)
+        // })
+
+
+        /// SlideUp, SlideDown, SlideToggle Methods  ///
+
+        // $('.lorem').slideUp(1000)
+        // $('.lorem').slideDown(1000)
+        // $('#butn').click(function(){
+        //     $('.lorem').slideToggle(1000)
+        // })
+
+
+        /// Animate Function in Jquery  ///
+
+        // $('.lorem').animate({
+        //     opacity: 0.3,
+        //     height:'150px',
+        //     width: '350px'
+
+        // }, 4000)
+
+        // $('.lorem').animate({ opacity: 0.3 }, 4000)
+        // $('.lorem').animate({ opacity: 0.8 }, 1000)
+        // $('.lorem').animate({ width: '350px' }, 4000)
+
+
+        /// More Method in Jquery  ///
+
+        // $('.lorem').stop()
+        // $('.lorem').text()
+        // $('.lorem').text("This i Harry")
+        // $('body').html()
+
+        // Input Method
+        // $('#ta').val()
+        // $('#ta').val("Hello World")
+
+        // $('.lorem').empty()   // Empty Element Content
+        // $('.lorem').remove()   // Remove Element 
+
+        // $('.lorem').addClass("mylorem")   // Add Class 
+        // $('.lorem').removeClass("mylorem")   // Remove Class 
+
+
+        /// AJAX in Jquery  ///
+
+        // $.get('https://code.jquery.com/jquery-3.3.1.js', function (data, status) { alert(data); })
+
+        // $.get('https://code.jquery.com/jquery-3.3.1.js', function (data, status) { alert(status); })
+
+        // $.post('https://code.jquery.com/jquery-3.3.1.js',
+        //     { name: 'Aliyan', channel: 'aliyan dev' },
+        //     function (data, status) { alert(status) });
+
+    })
+
+    function Dark() {
+        $('body').css({
+            'background-color': 'Black'
+        })
+        $('div').css({
+            'background-color': 'Black'
+        })
+        $('h1').css({
+            'color': 'white'
+        })
+        $('p').css({
+            'color': 'white'
+        })
+        $('.card-body').css({
+            'color': 'white'
+        })
+        $('.card-title').css({
+            'color': 'white'
+        })
+        $('.card-text').css({
+            'color': 'white'
+        })
+    }
+    function Light() {
+        $('body').css({
+            'background-color': 'white'
+        })
+        $('div').css({
+            'background-color': 'white'
+        })
+        $('h1').css({
+            'color': 'black'
+        })
+        $('p').css({
+            'color': 'black'
+        })
+        $('.card-body').css({
+            'color': 'black'
+        })
+        $('.card-title').css({
+            'color': 'black'
+        })
+        $('.card-text').css({
+            'color': 'black'
+        })
+    }
+
+    function Search() {
+        var a = $('.inp').val()
+        if (a == "") {
+            $("h1").text("Please Enter the Value")
+        }
+        else {
+            $("h1").text(a)
+        }
+    }
+
+    //////   TwentyTwenty Image Comparison Jquery Plugin   ////// 
+
+    $(function () {
+        $("#container1").twentytwenty({
+            no_overlay: true, //Do not show the overlay with before and after
+        });
+    });
+
+
+    //////   Owl Carousel Jquery Plugin   ////// 
+
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        responsive: {
+            0: {
+                items: 3
+            },
+            600: {
+                items: 3
+            },
+            1000: {
+                items: 4
+            }
+        }
+    })
+
+    //////   Magnify Jquery Plugin   ////// 
+
+    $(document).ready(function () {
+        $('.zoom').magnify();
+    });
+
+    //////   Auto Complete Jquery Plugin   ////// 
+
+    var suggestion = ['Blue t-shirts', 'White t-shirts', 'Green t-shirts', 'Red t-shirts']
+    $('.inp').autocomplete({
+        source: suggestion
+    })
+
+    function Search() {
+        var user = $('.inp').val()
+        if (user == 'Blue t-shirts') {
+            $('.Green').hide()
+            $('.White').hide()
+            $('.Red').hide()
+        }
+        else if (user == 'White t-shirts') {
+            $('.Green').hide()
+            $('.Blue').hide()
+            $('.Red').hide()
+        }
+        else if (user == 'Green t-shirts') {
+            $('.White').hide()
+            $('.Blue').hide()
+            $('.Red').hide()
+        }
+        else if (user == 'Red t-shirts') {
+            $('.White').hide()
+            $('.Blue').hide()
+            $('.Green').hide()
+        }
+    }
+
+    //////   Add to Cart in Jquery   ////// 
+
+    function addtocart(price, quanity) {
+        var input = parseInt($('.quan-' + quanity).val());
+        console.log(input)
+        console.log(price + " " + input + " " + (price * input))
+
+        var data = {
+            "name": "t-shirts",
+            "price": price,
+            "quanity": input,
+            "total": price * input
+        }
+        console.log(data)
+        localStorage.setItem("Data", JSON.stringify(data))
+    }
+
+
+</script>
+
+</html>
