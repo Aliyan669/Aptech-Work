@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matching</title>
+</head>
+
+<body>
+  <h1>Matching on Test Funtion</h1>
+  <input type="text" id="user" placeholder="Enter Username">
+  <button onclick="check()">Check</button>
+</body>
+
+<script>
+  function check() {
+    var userinput = document.getElementById("user").value
+    var givenValue = /student/g;
+
+    if (givenValue.test(userinput)) {
+      alert("Login Successful")
+    } else {
+      alert("Invalid User")
+    }
+  }
+</script>
+
+</html>

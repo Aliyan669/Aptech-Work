@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patten Hint</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2 id="check"></h2>
+
+        <input type="text" onkeyup="emailCheck()" id="myinp" placeholder="Enter Email">
+        <br /><br />
+        <span>Please Enter a Valid Email Address Specail (@)</span>
+    </div>
+</body>
+<script>
+    function emailCheck() {
+        var email = document.getElementById("myinp").value
+        var pattern = /([@]{1})/
+
+        if (pattern.test(email)) {
+            document.getElementById("check").innerHTML = "Valid Email"
+        }
+        else {
+            document.getElementById("check").innerHTML = "InValid Email"
+        }
+    }
+</script>
+
+</html>
