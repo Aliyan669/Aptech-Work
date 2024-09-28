@@ -117,6 +117,21 @@
 } */
 
 
+/* //  Custom Side Scrollbar  */
+
+/* ::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: yellow;
+    border-radius: 5px;
+} */
+
 /* //  Media Query REsponsive Website ke liya  */
 
 /* @media (max-width:400px){
@@ -128,7 +143,7 @@
 
 /* //  Keyframe Animation ke Liya  */
 
-.container {
+/* .container {
     width: 100%;
     height: 3vh;
     background-color: aquamarine;
@@ -156,4 +171,4 @@
     to {
         width: 70%;
     }
-}
+} */
