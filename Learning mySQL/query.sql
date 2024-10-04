@@ -26,3 +26,10 @@ SELECT * FROM Student;
 CREATE TABLE Student (
         student_id int PRIMARY KEY AUTOINCREMENT,
 );
+
+---- Foreign Key Concept on SQL	 ----
+
+/* Go to the Table and Top Right Corner Operation Storage Engine ByDefault (MYISAM) Covert 
+to (InnoDB). Go to Structure Tab Relation View Button Enable and Put the Forign Key Name, 
+select Current Table Coulumn, Select Database, Select Second Table & Select Second Table, 
+Two Table Values type Required Primary Key and INT.*/ 
