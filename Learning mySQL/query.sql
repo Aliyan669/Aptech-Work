@@ -24,7 +24,7 @@ SELECT * FROM Student;
 
 -- /// Add Primary Key & Auto_Increament on Creating Table ///
 CREATE TABLE Student (
-        student_id int PRIMARY KEY AUTOINCREMENT,
+        student_id int PRIMARY KEY AUTOI_NCREMENT,
 );
 
 ---- Foreign Key Concept on SQL	 ----
