@@ -32,6 +32,13 @@ to (InnoDB). Go to Structure Tab Relation View Button Enable and Put the Forign 
 select Current Table Coulumn, Select Database, Select Second Table & Select Second Table, 
 Two Table Values type Required Primary Key and INT.*/ 
 
+---- JOIN (INNER JOIN, RIGHT JOIN, LEFT JOIN, CROSS JOIN) on MySQL  ----
+
+SELECT * FROM TABLE_NAME_1 INNER JOIN TABLE_NAME_2 ON TABLE_NAME_1.COLUMN_1 = TABLE_NAME_2.COLUMN_2;
+SELECT * FROM TABLE_NAME_1 LEFT JOIN TABLE_NAME_2 ON TABLE_NAME_1.COLUMN_1 = TABLE_NAME_2.COLUMN_2;
+SELECT * FROM TABLE_NAME_1 RIGHT JOIN TABLE_NAME_2 ON TABLE_NAME_1.COLUMN_1 = TABLE_NAME_2.COLUMN_2;
+SELECT * FROM TABLE_NAME_1 CROSS JOIN TABLE_NAME_2;
+
 ---- Aggregate Functions on MySQL  ----
 
 MIN() -- Returns the smallest value within the selected column
