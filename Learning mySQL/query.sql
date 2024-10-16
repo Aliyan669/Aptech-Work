@@ -12,13 +12,19 @@ CREATE TABLE Student (
         student_email varchar(50)
 );
 
+-- /// Read Data on Table ///
+SELECT * FROM Student;
+
 -- /// Insert Data on Table ///
 INSERT INTO Student (student_id, student_name, student_email)
 VALUES (1, 'Aliyan', "aliyanamir@gmail.com"),
        (2, 'Fahad', "fahad@gmail.com")
 
--- /// Read Data on Table ///
-SELECT * FROM Student;
+-- /// Update Data on Table ///
+UPDATE TABLE_NAME SET COL_NAME = VALUE WHERE COL_NAME = VALUE;
+
+-- /// Delete Data on Table ///
+DELETE FROM TABLE_NAME WHERE COL_NAME = VALUE;
 
 -- /// Add Primary Key & Auto_Increament on Creating Table ///
 CREATE TABLE Student (
@@ -58,4 +64,7 @@ SELECT * FROM TABLE_NAME ORDER BY COLUMN_NAME DESC;
 SELECT * FROM TABLE_NAME LIMIT 2;
 
 ---- WHERE on MySQL ----
-SELECT * FROM TABLE_NAME WHERE COLUMN_NAME = 100
+SELECT * FROM TABLE_NAME WHERE COLUMN_NAME = 100;
+
+---- Subquery & Nested Query on MySQL ----
+SELECT * FROM TABLE_NAME WHERE COLUMN_NAME = (SELECT COLUMN_NAME FROM TABLE_NAME WHERE COLUMN_NAME = VALUES);
