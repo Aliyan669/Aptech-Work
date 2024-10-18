@@ -5,6 +5,17 @@
 -- /// Create Database ///
 CREATE DATABASE Aliyan_data;
 
+-- /// Delete Database ///
+DROP DATABASE Aliyan_data;
+
+-- /// Used Database ///
+USE DATABASE_NAME;  -- Only Workbench
+
+
+-- /// Show Database & Tables ///
+SHOW DATABASES;
+SHOW TABlES;
+
 -- /// Create Table ///
 CREATE TABLE Student (
         student_id int,
@@ -28,7 +39,7 @@ DELETE FROM TABLE_NAME WHERE COL_NAME = VALUE;
 
 -- /// Add Primary Key & Auto_Increament on Creating Table ///
 CREATE TABLE Student (
-        student_id int PRIMARY KEY AUTOI_INCREMENT,
+        student_id int PRIMARY KEY AUTO_INCREMENT,
 );
 
 ---- Foreign Key Concept on MySQL ----
