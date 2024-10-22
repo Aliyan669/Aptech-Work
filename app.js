@@ -356,7 +356,10 @@
 //////  Events in Js   ///////
 
 // onClick()   // Assign in Html
+// onChange()   // Assign in Html
+// onkeyup()   // Assign in Html
 // onMouseover()   // Assign in Html
+// onMouseout()   // Assign in Html
 // onMouseleave()   // Assign in Html
 
 
