@@ -87,7 +87,38 @@ https://youtu.be/M2at7D-lciw?si=pCAPj-9sHDd16y5P -->
     // $data = array("Name" => "Aliyan Amir" , "Age" => 19);
     // echo "My Name is " . $data["Name"]. " Age is " . $data["Age"];
     
+    // Multidimensional Array
+    // $student = [
+    //     ["Aliyan Amir",19],
+    //     ["Hammad Ejaz",20]
+    // ];
+    // echo $student[1][0];
+    
+    // $student = array (
+    //     array("Aliyan",19),
+    //     array("Hammad",20)
+    // );
+    // echo $student[1][0];
+    
+    // $student = [
+    //     ["name" => "Aliyan Amir", "age" => 19],
+    //     ["name" => "Muzammil", "age" => 23]
+    // ];
+    // echo $student[0]["name"];
+    
 
+    // Array Methods
+    
+    // is_Array() on Array
+    // $fruits = ["Apple", "Mango","Pineapple"];
+    // $check = is_array($fruits);
+    
+    // if ($check) {
+    //    echo "Mango is Available in Array";
+    // } else {
+    // echo "Mango is not Available in Array";
+    // }
+    
     ?>
 </body>
 
