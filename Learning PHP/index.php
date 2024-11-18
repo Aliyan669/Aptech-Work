@@ -119,6 +119,74 @@ https://youtu.be/M2at7D-lciw?si=pCAPj-9sHDd16y5P -->
     // echo "Mango is not Available in Array";
     // }
     
+    // array_search() on Array  (Search in Array & Return Index Number)
+    
+    // $fruits = ["Apple", "Mango","Pineapple"];
+    // $check = array_search("Apple", $fruits);
+    
+    // echo $check;
+    // print_r($fruits);
+    
+    // array_pop() on Array (Delete on Last Value on Array)
+    
+    // $fruits = ["Apple", "Mango","Pineapple"];
+    // $check = array_pop($fruits);
+    
+    // echo $check;
+    // print_r($fruits);
+    
+    // array_shift() on Array (Delete on First Value on Array)
+    
+    // $fruits = ["Apple", "Mango","Pineapple"];
+    // $check = array_shift($fruits);
+    
+    // echo $check;
+    // print_r($fruits)
+    
+    // array_push() on Array (Insert a Value on the last of Array)
+    
+    // $fruits = ["Apple", "Mango","Pineapple"];
+    // $check = array_push($fruits, "Banana");
+    // print_r($fruits)
+    
+    // array_unshift()() on Array (Insert a Value on the Start of Array)
+    
+    // $fruits = ["Apple", "Mango","Pineapple"];
+    // $check = array_unshift($fruits, "Banana");
+    // print_r($fruits)
+    
+    // array_unshift()() on Array (Insert a Value on the Start of Array)
+    
+    // $fruits = ["Apple", "Mango","Pineapple"];
+    // $check = array_unshift($fruits, "Banana");
+    // print_r($fruits)
+    
+
+    // Function in Php
+    
+    // function Greeting(){
+    //     echo "Function in PHP";
+    // }
+    // Greeting()
+
+    // Global Function
+
+    // $glo = "</br>This is Global Function";
+    // function check(){
+    //     global $glo;
+    //     echo $glo;
+    // }
+    // check();
+
+    // Local Function
+
+    // function Secondcheck(){
+    //     $loc = "</br>This is Local Function";
+    //     echo $loc;
+    // }
+    // Secondcheck()
+    
+
     ?>
 </body>
 
