@@ -168,24 +168,97 @@ https://youtu.be/M2at7D-lciw?si=pCAPj-9sHDd16y5P -->
     //     echo "Function in PHP";
     // }
     // Greeting()
-
+    
     // Global Function
-
+    
     // $glo = "</br>This is Global Function";
     // function check(){
     //     global $glo;
     //     echo $glo;
     // }
     // check();
-
+    
     // Local Function
-
+    
     // function Secondcheck(){
     //     $loc = "</br>This is Local Function";
     //     echo $loc;
     // }
     // Secondcheck()
     
+
+    // If Else Condition
+    
+    // $value = "check";
+    // if ($value == "check") {
+    //     echo "Value Matched";
+    // }
+    
+    // $age = 19;
+    // if ($age >= 18) {
+    //     echo "You go the Party";
+    // }else{
+    //     echo "You are a child";
+    // }
+    
+
+    // $marks = 55;
+    
+    // if ($marks > 80) {
+    //     echo "Your Grade is A+";
+    // }
+    
+    // elseif( $marks <= 80 && $marks >= 70 ){
+    //     echo "Your Grade is A";
+    // }
+    
+    // elseif($marks <= 70 && $marks >= 60 ){
+    //     echo "Your Grade is B";
+    // }
+    
+    // elseif($marks <= 60 && $marks >= 50){
+    //     echo "Your Grade is C";
+    // }
+    // else{
+    //     echo "You Fail";
+    // }
+    
+    // Nested If Else
+    
+    // $age = 19;
+    // $name= "cafe";
+    
+    // if ($age >= 18) {
+    //     echo "You go the Party";
+    
+    //     if ($name == "cafe") {
+    //     echo "You go to the Cafe";
+    //     }
+    
+    // }else{
+    //     echo "You are a child";
+    // }
+    
+
+    // Switch Case
+    
+    // $name= "party";
+    
+    // switch ($name) {
+    //     case 'cafe':
+    //         echo "You go to the Cafe";
+    //         break;
+    
+    //     case 'party':
+    //         echo "You go to the party";
+    //         break;
+    
+    //     default:
+    //     echo "Try Again";
+    //         break;
+    // }
+    
+
 
     ?>
 </body>
