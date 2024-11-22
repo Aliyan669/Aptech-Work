@@ -259,6 +259,11 @@ https://youtu.be/M2at7D-lciw?si=pCAPj-9sHDd16y5P -->
     // }
     
 
+    // Include & Require (Use on file Linking)
+
+    // include("connect.php");
+    // require("connect.php")
+
 
     ?>
 </body>
