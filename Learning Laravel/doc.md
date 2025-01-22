@@ -37,7 +37,7 @@ Laravel Project Run:
 php artisan serve
 ```
 
-laravel file Extension Example:
+laravel file Extension Example:<br/>
 .blade.php
 
 
@@ -47,3 +47,40 @@ MVC stands for Model-View-Controller, a software design pattern that separates a
 <b>Model:</b> write business login, database communication.<br/> 
 <b>View:</b> User Interface (Code we write to display on UI).<br/> 
 <b>Controller:</b> Handle user interaction  and select to view to render, communicate Model and View.
+
+
+## Routing in Laravel?
+Routing in Laravel is the process of mapping HTTP requests to the actions that an application should take.
+
+Routing: Access Page in URL.<br/>
+routes/web.php file.
+
+New Route Create Code:
+```
+Route::get('/home', function () {
+    return view('home');
+});
+```
+
+Shorthand Code:
+```
+Route::view('/home','home');
+```
+
+Dynamic Data Get Route:
+```
+Route::get('/about/{name}', function ($name) {
+    return view('about',['name' => $name]);
+});
+```
+
+About file Get Dynamic Value:
+```
+<h1>{{$name}}</h1>
+```
+
+Redirecting in laravel:
+```
+route::redirect('/home','/about');
+```
+
