@@ -49,6 +49,17 @@ MVC stands for Model-View-Controller, a software design pattern that separates a
 <b>Controller:</b> Handle user interaction  and select to view to render, communicate Model and View.
 
 
+## View in Laravel?
+Views are typically written in Blade, a templating engine provided by Laravel. Blade allows you to create dynamic and reusable HTML templates
+
+Create File Manually:<br/>
+<b>Directory: </b> resources/view
+
+Create File in Command:<br/>
+```
+php artisan make:view Home
+```
+
 ## Routing in Laravel?
 Routing in Laravel is the process of mapping HTTP requests to the actions that an application should take.
 
@@ -125,13 +136,24 @@ public function AdminLogin(){
 }
 ```
 
-## View in Laravel?
-Views are typically written in Blade, a templating engine provided by Laravel. Blade allows you to create dynamic and reusable HTML templates
 
-Create File Manually:<br/>
-<b>Directory: </b> resources/view
+For the Laravel, if else, for loop and the foreach loop will start from @.
 
-Create File Command:<br/>
+## Subview in laravel
+A subview is a view that is included within another view, allowing for modular and reusable code.
+Same include in Php.
 ```
-php artisan make:view Home
+@include('common.header');
+```
+
+Passing Data with the help of Include:
+```
+@include('common.header',['name' =>"Aliyan"]);
+```
+
+Data Get in Header File:
+```
+<div>
+    <p>Hello, {{ $name }}!</p>
+</div>
 ```
