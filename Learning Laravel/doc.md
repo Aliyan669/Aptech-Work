@@ -26,4 +26,24 @@ How to Check Laravel Version & Install:
 laravel -v 
 ```
 
+Create Laravel Project any Directory:
+```
+laravel new aliyan_laravel
+cd aliyan_laravel
+```
 
+Laravel Project Run:
+```
+php artisan serve
+```
+
+laravel file Extension Example:
+.blade.php
+
+
+## What is MVC?
+
+MVC stands for Model-View-Controller, a software design pattern that separates an application into three parts: the model, view, and controller. 
+<b>Model:</b> write business login, database communication.
+View: User Interface (Code we write to display on UI).
+Controller: Handle user interaction  and select to view to render, communicate Model and View.
