@@ -43,7 +43,7 @@ laravel file Extension Example:
 
 ## What is MVC?
 
-MVC stands for Model-View-Controller, a software design pattern that separates an application into three parts: the model, view, and controller. 
-<b>Model:</b> write business login, database communication.
-View: User Interface (Code we write to display on UI).
-Controller: Handle user interaction  and select to view to render, communicate Model and View.
+MVC stands for Model-View-Controller, a software design pattern that separates an application into three parts: the model, view, and controller.<br/> 
+<b>Model:</b> write business login, database communication.<br/> 
+<b>View:</b> User Interface (Code we write to display on UI).<br/> 
+<b>Controller:</b> Handle user interaction  and select to view to render, communicate Model and View.
