@@ -53,7 +53,7 @@ MVC stands for Model-View-Controller, a software design pattern that separates a
 Routing in Laravel is the process of mapping HTTP requests to the actions that an application should take.
 
 Routing: Access Page in URL.<br/>
-routes/web.php file.
+<b>Directory: </b>routes/web.php
 
 New Route Create Code:
 ```
@@ -84,3 +84,54 @@ Redirecting in laravel:
 route::redirect('/home','/about');
 ```
 
+Routing Methods in Laravel:
+```
+Route::get('$uri',$callback);
+Route::post('$uri',$callback);
+Route::put('$uri',$callback);
+Route::patch('$uri',$callback);
+Route::delete('$uri',$callback);
+Route::options('$uri',$callback);
+Route::view('$uri',$callback);
+Route::redirect('$uri',$callback);
+```
+
+
+## Controller in Laravel?
+A Controller in Laravel is a PHP class that manages HTTP requests and the application's response. Controllers are a key part of the Model-View-Controller (MVC) architectural pattern. 
+
+Create Controller:
+```
+php artisan make:controller MyController
+```
+
+Controller Code:
+```
+public function Home(){
+     return view('home');
+}
+```
+
+Controller Access in Route code:
+```
+use App\Http\Controllers\MyController;  (Import at the top of the file.)
+Route::get('/home',[MyController::class, "Home"]);
+```
+
+Nested Folder Routing:
+```
+public function AdminLogin(){
+     return view('admin.login');   (. used it)
+}
+```
+
+## View in Laravel?
+Views are typically written in Blade, a templating engine provided by Laravel. Blade allows you to create dynamic and reusable HTML templates
+
+Create File Manually:<br/>
+<b>Directory: </b> resources/view
+
+Create File Command:<br/>
+```
+php artisan make:view Home
+```
