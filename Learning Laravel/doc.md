@@ -504,8 +504,8 @@ public function Users(){
 
 ## Display Datbase Data on UI:
 
-<b>Create a View File:</b> users.blade.php:
-<b>Create a Controller:</b> UserController.php:
+<b>Create a View File:</b> users.blade.php <br/>
+<b>Create a Controller:</b> UserController.php
 
 UserController.php:
 
@@ -541,18 +541,121 @@ users.blade.php:
 ```
 
 ## What is Eloquent Model in Laravel?
+
 Eloquent is an object relational mapper (ORM) that is included by default within the Laravel framework.
 
 ## What is Model in Laravel?
+
 Models in Laravel serve as the link between your application and your database, making data handling much more straightforward, On the other hand, Views in Laravel manage the user-facing side of the application.
 
+First Create a table in database & Controller then Modal Create.
+Modal Create:
+
+```
+php artisan make:model student
+```
+
+<b>Directory:</b> app/model/student/php:
+Put this Line in Function for the Table Connectivity.
+
+```
+protected $table = 'students';
+```
+
+StudentController.php:
+
+```
+function getStudent(){
+        $student = \App\Models\Student::all();
+        return view('student',['data'=>$student]);
+}
+```
+
+student.blade.php:
+
+```
+<div>
+    <h1>Student List</h1>
+    <table border="1">
+        <tr>
+            <td>Name</td>
+            <td>Email</td>
+            <td>Password</td>
+        </tr>
+
+        @foreach ($data as $student)
+            <tr>
+                <td>{{$student->name}}</td>
+                <td>{{$student->email}}</td>
+                <td>{{$student->password}}</td>
+            </tr>
+        @endforeach
+
+    </table>
+</div>
+```
+
+## What is Inspecting Model?
+
+Showing Detail On Database.
+
+```
+php artisan model:show student
+```
+
+## What is Http Client?
+
+An "HTTP Client" is a software application that uses the Hypertext Transfer Protocol (HTTP) to send requests to a web server and receive responses.<br/>
+<b>Api:</b> Application Prgramming Interface.<br/>
+Api Store Json format Data.
+
+First Controller Create:
+
+```
+public function getUser(){
+        $response= Http::get('https://jsonplaceholder.typicode.com/users/1');
+        return $response;
+}
+```
+
+Route Create:
+
+```
+Route::get('/userapi',[UserApi::class, 'getUser']);
+```
+
+## Database: Query Builder:
+
+## what is Query Builder in Laravel?
+
+Laravel's database query builder provides a convenient, fluent interface to creating and running database queries.
+
+Crate a Controller:
+
+```
+use Illuminate\Support\Facades\DB;         (Top of the Page)
+
+public function query(){
+
+        $result = DB::table('user')-> get();
+        $result = DB::table('user')-> where('phone', '1234')->get();
+        $result = DB::table('user')-> first();
+        $result = [$result];
+
+        $result = DB::table('user')->insert([
+         'name' => 'tony',
+         'email' => 'tony@gmail.com',
+         'phone' =>'1111'
+
+        ]);
+
+        if($result){
+          return "Data Inserted";
+         } else{
+          return "Data not Inserted";
+         }
 
 
-
-
-
-
-
-
-
-
+        return DB::select('select * from users ');      (Data Get on MySQL)
+}
+```
