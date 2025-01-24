@@ -206,13 +206,13 @@ Get in <b>Directory: </b>resources/views/components/alert-msg.blade.php
 ```
 
 write a code in <b>Directory: </b> app/View/Components AlertMsg.php
-public $msg;
-__construct function me pararmeter me ye ayega: ($msg)
+public $msg;<br/>
+__construct function me pararmeter me ye ayega: ($msg) <br/>
 then function ke andar ye: $this->msg = $msg;
 
 ## Form Handling in Laravel:
 
-<b>File:</b>user-form.blade.php:
+<b>File:</b> user-form.blade.php:
 
 ```
 <div>
@@ -235,7 +235,7 @@ then function ke andar ye: $this->msg = $msg;
 php artisan make:controller UserController
 ```
 
-<b>File:</b>UserController.php:
+<b>File: </b>UserController.php:
 
 ```
 public function addUser(Request $request){
@@ -271,7 +271,7 @@ public function addUser(Request $request){
 }
 ```
 
-<b>File:</b>user-form.blade.php:
+<b>File: </b>user-form.blade.php:
 
 ```
 <div>
