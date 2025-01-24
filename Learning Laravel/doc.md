@@ -301,3 +301,98 @@ URL generation is a feature in Laravel that simplifies the process of creating r
 <h3>{{url()->full()}}</h3>       // Full
 <h3>{{url()->previous()}}</h3>   // Previous
 ```
+
+## What is Named Routes in laravel?
+
+In Laravel, a "Named Route" is a way to assign a unique name to a route, allowing you to easily generate URLs or redirects to that specific route within your application by referencing.
+
+Named Routes:
+
+```
+Route::view('/home/grand/view','home')->name('hm');
+<a href="{{route('hm')}}">Home Page</a>
+```
+
+## What is Routing group with Prefix?
+
+A routing group with prefix in Laravel is a way to group routes that share common features, such as a prefix, and organize code.
+
+Old Method:
+
+```
+Route::view('/Dashboard/home','home');
+Route::get('/Dashboard/homepage',[MyController::class, "DashHome"]);
+Route::get('/Dashboard/about',[MyController::class, "DashAbout"]);
+```
+
+New Method: (Routing group with Prefix)
+
+```
+Route::prefix('Dashboard')->group(function(){
+     Route::view('/home','home');
+     Route::get('/homepage',[MyController::class, "DashHome"]);
+     Route::get('/about',[MyController::class, "DashAbout"]);
+});
+```
+
+## What is Route Group with Controller? (Available in upto laravel version:9)
+
+A route group with controller in Laravel is a way to define a common controller for a group of routes. This method reduces repetition and makes code cleaner.
+
+Old Method:
+
+```
+Route::get('/student/list',[StudentController::class, "List"]);
+Route::get('/student/add',[StudentController::class, "Add"]);
+Route::get('/student/delete',[StudentController::class, "Delete"]);
+```
+
+New Method: (Route Group with Controller)
+
+```
+Route::controller(StudentController::class)->group(function(){
+     Route::get('/student/list', "List");
+     Route::get('/student/add',"Add");
+     Route::get('/student/delete', "Delete");
+});
+```
+
+## What is middleware in laravel?
+
+Middleware in Laravel is a way to filter and inspect HTTP requests that enter an application.
+
+<b>Type of Middleware:</b>
+
+1. Global Middleware.
+2. Route Middleware.
+3. Group Middleware.
+
+Middleware Create:
+
+```
+php artisan make:middleware AgeCheck
+```
+
+<b>Middlware Directory:</b>app/Http/Middleware/AgeCheck.php
+
+<b>Second Middleware directory:</b> bootstrap/app.php
+
+Inside Directory: bootstrap/app.php
+
+```
+use App\Http\Middleware\AgeCheck;      (Top of the Page)
+
+->withMiddleware(function (Middleware $middleware) {
+        $middleware->append(AgeCheck::class);
+});
+```
+
+Inside Directory: app/Http/Middleware/AgeCheck.php
+Put inside the handle function:
+
+```
+print_r($request->age);
+     if($request->age<18){
+         die("You can not visit this site");
+}
+```
