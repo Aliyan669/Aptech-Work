@@ -406,7 +406,8 @@ In Laravel, a middleware group is a collection of middleware that are assigned t
 Inside Directory: bootstrap/app.php
 
 ```
-use App\Http\Middleware\AgeCheck;     (Top of the Page)
+use App\Http\Middleware\AgeCheck;      (Top of the Page)
+
 ->withMiddleware(function (Middleware $middleware) {
         $middleware->appendToGroup('check',[
         AgeCheck::class
