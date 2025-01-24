@@ -450,3 +450,25 @@ Route::view('/home','home')->middleware([AgeCheck::class, CountryCheck::class]);
 ```
 
 
+## Connect to MySQL Database on Laravel:
+Create a Database in MySQL.
+
+update .env file:
+```
+DB_CONNECTION=sqlite  (Old)
+DB_CONNECTION=mysql   (Update)
+```
+
+Set Database Name and create a same name on mysql database and uncomment Code.
+
+
+## Schema Length Issue ke Liya:
+<b>Directory:</b> app/Providers/AppServiceProvider.php
+```
+use Illuminate\Database\Schema\Builder;     (Top of the Page)
+
+public function boot(): void
+{
+        Builder::defaultStringLength(191);
+}
+```
