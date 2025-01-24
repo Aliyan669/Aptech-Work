@@ -450,11 +450,12 @@ Route::view('/home','home')->middleware(AgeCheck::class);
 Route::view('/home','home')->middleware([AgeCheck::class, CountryCheck::class]);
 ```
 
-
 ## Connect to MySQL Database on Laravel:
+
 Create a Database in MySQL.
 
 update .env file:
+
 ```
 DB_CONNECTION=sqlite  (Old)
 DB_CONNECTION=mysql   (Update)
@@ -462,9 +463,10 @@ DB_CONNECTION=mysql   (Update)
 
 Set Database Name and create a same name on mysql database and uncomment Code.
 
-
 ## Schema Length Issue ke Liya:
+
 <b>Directory:</b> app/Providers/AppServiceProvider.php
+
 ```
 use Illuminate\Database\Schema\Builder;     (Top of the Page)
 
@@ -473,3 +475,84 @@ public function boot(): void
         Builder::defaultStringLength(191);
 }
 ```
+
+## What is Migrate & Migration in Laravel?
+
+Migrations are like version control for your database, allowing a team to easily modify and share the application's database schema.
+
+Migrate:
+
+```
+php artisan migrate
+```
+
+Updating Miggration:
+
+```
+php artisan migrate:refresh
+```
+
+Create UserController.php file
+
+```
+use Illuminate\Support\Facades\DB;        (Top of the Page)
+
+public function Users(){
+        return DB::select('select * from users ');      (Data Get on MySQL)
+}
+```
+
+## Display Datbase Data on UI:
+
+<b>Create a View File:</b> users.blade.php:
+<b>Create a Controller:</b> UserController.php:
+
+UserController.php:
+
+```
+public function Users(){
+        $user= DB::select('select * from users ');
+        return view('users',['users'=> $user]);
+}
+```
+
+users.blade.php:
+
+```
+<div>
+    <h1>User List</h1>
+    <table border="1">
+        <tr>
+            <td>Name</td>
+            <td>Email</td>
+            <td>Phone</td>
+        </tr>
+
+        @foreach ($users as $users)
+            <tr>
+                <td>{{$users->name}}</td>
+                <td>{{$users->email}}</td>
+                <td>{{$users->password}}</td>
+            </tr>
+        @endforeach
+
+    </table>
+</div>
+```
+
+## What is Eloquent Model in Laravel?
+Eloquent is an object relational mapper (ORM) that is included by default within the Laravel framework.
+
+## What is Model in Laravel?
+Models in Laravel serve as the link between your application and your database, making data handling much more straightforward, On the other hand, Views in Laravel manage the user-facing side of the application.
+
+
+
+
+
+
+
+
+
+
+
