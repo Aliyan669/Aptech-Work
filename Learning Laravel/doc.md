@@ -507,7 +507,7 @@ public function Users(){
 <b>Create a View File:</b> users.blade.php <br/>
 <b>Create a Controller:</b> UserController.php
 
-UserController.php:
+<b>File:</b> UserController.php:
 
 ```
 public function Users(){
@@ -516,7 +516,7 @@ public function Users(){
 }
 ```
 
-users.blade.php:
+<b>File:</b> users.blade.php:
 
 ```
 <div>
@@ -562,7 +562,7 @@ Put this Line in Function for the Table Connectivity.
 protected $table = 'students';
 ```
 
-StudentController.php:
+<b>File:</b> StudentController.php:
 
 ```
 function getStudent(){
@@ -571,7 +571,7 @@ function getStudent(){
 }
 ```
 
-student.blade.php:
+<b>File:</b> student.blade.php:
 
 ```
 <div>
@@ -626,7 +626,7 @@ Route::get('/userapi',[UserApi::class, 'getUser']);
 
 ## Database: Query Builder:
 
-## what is Query Builder in Laravel?
+## What is Query Builder in Laravel?
 
 Laravel's database query builder provides a convenient, fluent interface to creating and running database queries.
 
