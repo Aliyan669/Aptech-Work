@@ -373,7 +373,7 @@ Middleware Create:
 php artisan make:middleware AgeCheck
 ```
 
-<b>Middlware Directory:</b>app/Http/Middleware/AgeCheck.php
+<b>Middlware Directory:</b> app/Http/Middleware/AgeCheck.php
 
 <b>Second Middleware directory:</b> bootstrap/app.php
 
@@ -387,7 +387,8 @@ use App\Http\Middleware\AgeCheck;      (Top of the Page)
 });
 ```
 
-Inside Directory: app/Http/Middleware/AgeCheck.php
+Inside Directory: app/Http/Middleware/AgeCheck.php<br/>
+
 Put inside the handle function:
 
 ```
@@ -396,3 +397,56 @@ print_r($request->age);
          die("You can not visit this site");
 }
 ```
+
+## What is Middleware Group in Laravel?
+
+In Laravel, a middleware group is a collection of middleware that are assigned to a group of routes.
+
+<b>Single Route Middleware Grouping:</b><br/>
+Inside Directory: bootstrap/app.php
+
+```
+use App\Http\Middleware\AgeCheck;     (Top of the Page)
+->withMiddleware(function (Middleware $middleware) {
+        $middleware->appendToGroup('check',[
+        AgeCheck::class
+]);
+})
+```
+
+<b>Directory:</b> routes/web.php
+
+```
+Route::view('/home','home')->middleware('check');
+```
+
+<b>Group Route Middleware Grouping:</b><br/>
+<b>Directory:</b> routes/web.php
+
+```
+Route::middleware('check')->group(function(){
+    Route::view('/home','home');
+    Route::view('/about','about');
+})
+```
+
+<b>Assigning Middleware to Routes:</b>
+<b>Directory:</b> routes/web.php
+
+```
+use App\Http\Middleware\AgeCheck;     (Top of the Page)
+```
+
+<b>Single Middleware Assign:</b>
+
+```
+Route::view('/home','home')->middleware(AgeCheck::class);
+```
+
+<b>Multiple Middleware Assign:</b>
+
+```
+Route::view('/home','home')->middleware([AgeCheck::class, CountryCheck::class]);
+```
+
+
