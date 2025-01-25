@@ -659,3 +659,103 @@ public function query(){
         return DB::select('select * from users ');      (Data Get on MySQL)
 }
 ```
+
+## What is Eloquent model: Query Builder?
+
+Eloquent model as a powerful query builder allowing you to fluently query the database table associated with the model.
+
+First create a Model, second controller create then view create:
+
+<b>File:</b> QueryUserController.php
+
+```
+public function queryUser(){
+        $response= QueryUser::all();
+        $response = QueryUser::get();
+        $response= QueryUser::find(1);
+        $response= QueryUser:: where('phone', '1234')->get();
+        $response= QueryUser:: where('phone', '1234')->first();
+
+        /// Insert Query
+         $response = QueryUser::insert([
+             'name' => 'tony',
+             'email' => 'tony@gmail.com',
+             'password' => '1111'
+
+        ]);
+        if ($response) {
+             return "Data Inserted";
+        } else {
+             return "Data not Inserted";
+        }
+
+
+        // Update Query
+         $response = QueryUser::where('name',"aliyan")->update([
+             'name' => 'tony',
+        ]);
+        if ($response) {
+            return "Data Updated";
+        } else {
+             return "Data not Updated";
+        }
+
+
+         // Delete Query
+        $response = QueryUser::where('name',"aliyan")->delete();
+        if ($response) {
+            return "Data Deleted";
+        } else {
+            return "Data not Deleted";
+        }
+
+        return view('queryuser', ['data' => $response]);
+}
+```
+
+<b>Directory:</b> Modal/queryUSer.php: <br/>
+Put this File:
+
+```
+protected $table = 'users';
+```
+
+<b>File:<b/> queryUser.blade.php:
+
+```
+<div>
+    <h1>User List</h1>
+    <table border="1">
+        <tr>
+            <td>Name</td>
+            <td>Email</td>
+            <td>Password</td>
+        </tr>
+
+        @foreach ($data as $users)
+            <tr>
+                <td>{{$users->name}}</td>
+                <td>{{$users->email}}</td>
+                <td>{{$users->password}}</td>
+            </tr>
+        @endforeach
+
+    </table>
+</div>
+```
+
+## What is Route Any and Match function in Laravel:
+
+<b>Any Function:</b>
+Allow All request method call single route:
+
+```
+Route::any('user',[UserController::class, 'User']);
+```
+
+<b>Match Function:</b>
+
+```
+Route::match(['post','get'],'user',[UserController::class, 'Group1']);
+Route::match(['put','patch'],'user',[UserController::class, 'Group2']);
+```
