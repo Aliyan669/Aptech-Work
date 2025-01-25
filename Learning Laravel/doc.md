@@ -759,3 +759,19 @@ Route::any('user',[UserController::class, 'User']);
 Route::match(['post','get'],'user',[UserController::class, 'Group1']);
 Route::match(['put','patch'],'user',[UserController::class, 'Group2']);
 ```
+
+## What is HTTP Request class in Laravel? All Function
+
+Laravel's Illuminate\Http\Request class provides an object-oriented way to interact with the current HTTP request being handled by your application as well as retrieve the input, cookies, and files that were submitted with the request.
+
+<b>File:<b/> HttpController:
+
+```
+function httpRequets(Request $request){
+    echo "Request Method is " .$request->method();
+    echo "Request Path is " .$request->path();
+    echo "Request URl is " .$request->url();
+    echo "Request URl is " .$request->input('name');
+    echo "Request IP is " .$request->ip();
+}
+```
