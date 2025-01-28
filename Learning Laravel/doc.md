@@ -720,7 +720,7 @@ Put this File:
 protected $table = 'users';
 ```
 
-<b>File:<b/> queryUser.blade.php:
+<b>File:</b> queryUser.blade.php:
 
 ```
 <div>
@@ -764,7 +764,7 @@ Route::match(['put','patch'],'user',[UserController::class, 'Group2']);
 
 Laravel's Illuminate\Http\Request class provides an object-oriented way to interact with the current HTTP request being handled by your application as well as retrieve the input, cookies, and files that were submitted with the request.
 
-<b>File:<b/> HttpController:
+<b>File:</b> HttpController:
 
 ```
 function httpRequets(Request $request){
