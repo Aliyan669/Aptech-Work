@@ -764,7 +764,7 @@ Route::match(['put','patch'],'user',[UserController::class, 'Group2']);
 
 Laravel's Illuminate\Http\Request class provides an object-oriented way to interact with the current HTTP request being handled by your application as well as retrieve the input, cookies, and files that were submitted with the request.
 
-<b>File:</b> HttpController:
+<b>File:</b> HttpController.php:
 
 ```
 function httpRequets(Request $request){
@@ -774,4 +774,39 @@ function httpRequets(Request $request){
     echo "Request URl is " .$request->input('name');
     echo "Request IP is " .$request->ip();
 }
+```
+
+## What is Session in laravel?
+
+Sessions in Laravel provide a way to store user-specific data on the server and associate it with a unique session identifier stored on the server-side as a cookie.
+
+<b>File:</b> SessionController.php:
+
+```
+
+function Login(Request $request){
+   $request->session()->put('user',$request->input('user'));
+
+   return redirect('profile');
+}
+
+function Logout(){
+   session()->pull('user');
+}
+```
+
+<b>File:</b> profile.blade.php
+
+```
+<div>
+<h1>{{session('user')}}</h1>
+</div>
+```
+
+## What is Flash Session in laravel?
+
+In Laravel, the best way to pass different types of flash messages in the session.
+
+```
+$request->session()->flash('message','User has been Added Succesully');
 ```
